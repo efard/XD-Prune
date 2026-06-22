@@ -25,7 +25,7 @@ data/raw/
 data/mio_tcd_yolo/images/
 data/mio_tcd_yolo/labels/
 data/mio_tcd_yolo/profile_val_*.txt
-data/mio_tcd_yolo/invalid_bboxes.csv
+#data/mio_tcd_yolo/invalid_bboxes.csv
 data/mio_tcd_yolo/*.cache
 
 # Keep dataset yaml files
@@ -33,16 +33,16 @@ data/mio_tcd_yolo/*.cache
 
 
 # YOLO / Ultralytics generated outputs
-runs/
+runs/detect/
 wandb/
 mlruns/
 
 
 # Model weights / exported models
-*.pt
+#*.pt
 *.pth
 *.ckpt
-*.onnx
+#*.onnx
 *.engine
 *.tflite
 *.pb
