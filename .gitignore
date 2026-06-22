@@ -1,0 +1,70 @@
+# Python environment / cache
+.venv/
+venv/
+env/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+# Dataset files
+# Keep only small config files, not images/labels.
+data/raw/
+data/mio_tcd_yolo/images/
+data/mio_tcd_yolo/labels/
+data/mio_tcd_yolo/profile_val_*.txt
+data/mio_tcd_yolo/invalid_bboxes.csv
+data/mio_tcd_yolo/*.cache
+
+# Keep dataset yaml files
+!data/mio_tcd_yolo/*.yaml
+
+
+# YOLO / Ultralytics generated outputs
+runs/
+wandb/
+mlruns/
+
+
+# Model weights / exported models
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.tflite
+*.pb
+*.param
+*.bin
+*.weights
+*.safetensors
+
+
+# Large compressed / media files
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+
+# Logs / temp
+*.log
+tmp/
+temp/

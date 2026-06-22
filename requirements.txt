@@ -1,0 +1,11 @@
+ultralytics
+torch
+torchvision
+onnx
+onnxruntime
+openvino
+opencv-python
+pillow
+pyyaml
+tqdm
+pandas
