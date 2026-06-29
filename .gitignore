@@ -21,12 +21,15 @@ Desktop.ini
 
 # Dataset files
 # Keep only small config files, not images/labels.
-data/raw/
-data/mio_tcd_yolo/images/
-data/mio_tcd_yolo/labels/
-data/mio_tcd_yolo/profile_val_*.txt
+z bin
+1_data/raw/
+1_data/mio_yolo_11000_seed42/images/
+1_data/mio_yolo_11000_seed42/labels/
+1_data/mio_tcd_yolo/images/
+1_data/mio_tcd_yolo/labels/
+1_data/mio_tcd_yolo/profile_val_*.txt
 #data/mio_tcd_yolo/invalid_bboxes.csv
-data/mio_tcd_yolo/*.cache
+1_data/mio_tcd_yolo/*.cache
 
 # Keep dataset yaml files
 !data/mio_tcd_yolo/*.yaml

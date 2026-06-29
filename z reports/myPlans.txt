@@ -1,0 +1,120 @@
+✅🔲✖
+# 4
+✅ Model optimization analysis
+	✅ Run a YOLO model on CPU/ GPU
+	✅ Layer-based error injection and profiling
+
+✅ Deliverable			✅ Format
+Baseline result table		CPU vs GPU
+Layer-wise latency table	layer name, type, output shape, latency
+Bottleneck ranking		top 5 slowest layers
+Error sensitivity ranking	top 5 most accuracy-sensitive layers
+Short summary			哪些 layer 值得優化，哪些 layer 不應該大幅壓縮
+
+----- ----- ~ ----- ----- ~ ----- -----
+find . -type f | wc -l
+rm -r folder_name
+
+ssh platogpu007
+module load python/3.11.5
+module load gcc
+module load opencv/4.10.0
+source /home/afm176/envs/yolo26/bin/activate
+deactivate
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 5
+✅ discussed in our meeting, review at least two publications in this area, Instead of heuristic separation:
+	✅ dataset separation (train, validation, and test portions)
+		✅ dataset usage clarify (total)
+	✅ datasets randomization
+
+🔲 powerful GPU. redo last week's steps with the dataset.
+	🔲 final output: table that sorts the layers by accuracy drop, latency, and SW prunability
+		("latency/accuracy drop" or suggested metric).
+
+✅ Model optimization methods exploration
+	✅ Quantization
+	✅ Pruning
+	🔲 perform them
+	🔲 results table
+
+## server gpu
+✅ environment setup
+✅ data yolo convert
+🔲 train
+🔲 profiling
+🔲 error inj
+🔲 quantization
+🔲 purning
+
+## script extra
+✅ stratified split / class balance checking
+✖ need meta data: group-aware split by camera / scene / day
+✅ FPS / memory / CPU usage
+✅ COCO profiling
+
+## my extra
+✅ key forms
+✅! meeting time confirm
+✅ report edit for sign
+✅ report CityU
+🔲 learn more scripts
+🔲 invest image results
+🔲 Read Rafed's report for software details, getting the idea, and enhancements.
+
+## to Aftab Rafed
+✅ share the requested files with Rafed: original YOLO26n rather than the modified one (baseline)
+	🔲 for the repo files, provide step-by-step instructions to get the output (experiments reproducible)
+
+## github repo
+🔲 ultimate update
+🔲 comments
+
+## last reports (to repo)
+✅ 3: Overall, expand the abbreviations in the first use of the context, e.g., C2PSA, NMS, etc.
+✅ 3: Briefly explain the CSP-style.
+✅ 3: Add a picture of the C3k2 architecture.
+✖ 4: For a fair comparison in Table 4, we may need COCO.
+✖ 4: map50-90 negative problem
+
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 6
+🔲 Dataset: A new dataset that includes snow in its images, such as the ACDC and CADC datasets.
+	🔲 check whether keep on with MIO-TCD or switch to a new one.
+🔲 Model: A YOLO model, which is tuned for such weather conditions.
+	🔲 papers in this area: need to check if they are based on YOLO26n.
+	🔲 find the literature gap for possible contribution.
+
+🔲 Profiling + bottleneck analysis
+	🔲 layer-wise latency
+	🔲 memory
+	🔲 FPS
+	🔲 CPU usage
+
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 7
+Run YOLO inference on an embedded platform (e.g., ARM)
+
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 8
+Hardware / software partitioning
+Which layers should be run on FPGA
+
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 9
+1.	Resource utilization
+2.	Latency & throughput measurement
+
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 10
+Comparison vs software baseline (accuracy vs speed trade-off)
+
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 11
+1.	Power & efficiency analysis
+2.	Final evaluation
+
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
+# 12
+1.	Prepare figures, tables on what I worked
+2.	Draft and work on research paper

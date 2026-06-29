@@ -1,6 +1,0 @@
-row_number,image_id,class_name,xmin,ymin,xmax,ymax,reason
-125839,00039430,car,32,179,32,180,zero_or_negative_bbox_size
-125887,00039439,single_unit_truck,7,265,7,269,zero_or_negative_bbox_size
-134059,00041989,car,469,163,486,163,zero_or_negative_bbox_size
-152307,00047717,car,269,36,269,50,zero_or_negative_bbox_size
-211352,00066370,pickup_truck,64,62,64,71,zero_or_negative_bbox_size
