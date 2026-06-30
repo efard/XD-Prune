@@ -68,6 +68,6 @@ mlruns/
 
 
 # Logs / temp
-*.log
+#*.log
 tmp/
 temp/

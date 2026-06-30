@@ -1,0 +1,2 @@
+model,data,split,imgsz,batch,device,map50_95,map50,preprocess_ms_per_image,inference_ms_per_image,postprocess_ms_per_image,latency_ms_per_image,fps,elapsed_seconds,cpu_percent_process,rss_before_mb,rss_after_mb,rss_delta_mb,peak_cuda_memory_mb
+runs\baseline\yolo26n_mio_11000_e10_s42_cpu\weights\best.pt,.\1_data\mio_yolo_11000_seed42\mio_tcd.yaml,val,640,4,cpu,0.418412,0.571618,0.956680,64.955281,0.353280,66.265241,15.090868,141.282786,44.883111,250.105469,546.414062,296.308594,0.000000
