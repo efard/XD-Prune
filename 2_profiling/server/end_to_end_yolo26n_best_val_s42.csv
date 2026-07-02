@@ -1,0 +1,2 @@
+model,data,split,imgsz,batch,device,map50_95,map50,preprocess_ms_per_image,inference_ms_per_image,postprocess_ms_per_image,latency_ms_per_image,fps,elapsed_seconds,cpu_percent_process,rss_before_mb,rss_after_mb,rss_delta_mb,peak_cuda_memory_mb
+/home/afm176/yolo_project/runs/baseline/baseline_yolo26n_mio_11000_e100_img640_b16_s42_20260701_001856/weights/best.pt,1_data/mio_yolo_11000_seed42/mio_tcd.yaml,val,640,16,0,0.506632,0.690055,0.243273,1.004432,0.044004,1.291709,774.168091,9.792524,6.663247,572.933594,2053.109375,1480.175781,429.315918

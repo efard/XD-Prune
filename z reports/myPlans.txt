@@ -13,14 +13,14 @@ Short summary			哪些 layer 值得優化，哪些 layer 不應該大幅壓縮
 
 ----- ----- ~ ----- ----- ~ ----- -----
 find . -type f | wc -l
-rm -r folder_name
+rm -r folder/*
+mv /from /to
+rsync -a --info=progress2 /fromFolder /toFolder
+ln -s /theFolder /toShortcutPosition
 
 ssh platogpu007
-module load python/3.11.5
-module load gcc
-module load opencv/4.10.0
-source /home/afm176/envs/yolo26/bin/activate
-deactivate
+quota -s
+nvidia-smi
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 5
 ✅ discussed in our meeting, review at least two publications in this area, Instead of heuristic separation:
@@ -28,24 +28,24 @@ deactivate
 		✅ dataset usage clarify (total)
 	✅ datasets randomization
 
-🔲 powerful GPU. redo last week's steps with the dataset.
-	🔲 final output: table that sorts the layers by accuracy drop, latency, and SW prunability
+✅ powerful GPU. redo last week's steps with the dataset.
+	✖ final output: table that sorts the layers by accuracy drop, latency, and SW prunability
 		("latency/accuracy drop" or suggested metric).
 
 ✅ Model optimization methods exploration
 	✅ Quantization
 	✅ Pruning
-	🔲 perform them
-	🔲 results table
+	✅ perform them
+	✖ results table
 
 ## server gpu
 ✅ environment setup
 ✅ data yolo convert
-🔲 train
-🔲 profiling
-🔲 error inj
-🔲 quantization
-🔲 purning
+✅ train
+✅ profiling
+✅ error inj
+✅ quantization
+✅ purning
 
 ## script extra
 ✅ stratified split / class balance checking
@@ -58,8 +58,8 @@ deactivate
 ✅! meeting time confirm
 ✅ report edit for sign
 ✅ report CityU
-🔲 learn more scripts
-🔲 invest image results
+✖ learn more scripts
+✖ invest image results
 🔲 Read Rafed's report for software details, getting the idea, and enhancements.
 
 ## to Aftab Rafed
@@ -67,8 +67,8 @@ deactivate
 	🔲 for the repo files, provide step-by-step instructions to get the output (experiments reproducible)
 
 ## github repo
-🔲 ultimate update
-🔲 comments
+✅ ultimate update
+✖ comments
 
 ## last reports (to repo)
 ✅ 3: Overall, expand the abbreviations in the first use of the context, e.g., C2PSA, NMS, etc.
@@ -79,17 +79,21 @@ deactivate
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 6
+✅ Profiling + bottleneck analysis
+	✅ layer-wise latency
+	✅ memory
+	✅ FPS
+	✅ CPU usage
+
 🔲 Dataset: A new dataset that includes snow in its images, such as the ACDC and CADC datasets.
 	🔲 check whether keep on with MIO-TCD or switch to a new one.
 🔲 Model: A YOLO model, which is tuned for such weather conditions.
 	🔲 papers in this area: need to check if they are based on YOLO26n.
 	🔲 find the literature gap for possible contribution.
+✅ results report
 
-🔲 Profiling + bottleneck analysis
-	🔲 layer-wise latency
-	🔲 memory
-	🔲 FPS
-	🔲 CPU usage
+🔲 learn more scripts
+✅ invest image results
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 7
