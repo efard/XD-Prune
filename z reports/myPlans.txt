@@ -60,11 +60,11 @@ nvidia-smi
 ✅ report CityU
 ✖ learn more scripts
 ✖ invest image results
-🔲 Read Rafed's report for software details, getting the idea, and enhancements.
+- Read Rafed's report for software details, getting the idea, and enhancements.
 
 ## to Aftab Rafed
 ✅ share the requested files with Rafed: original YOLO26n rather than the modified one (baseline)
-	🔲 for the repo files, provide step-by-step instructions to get the output (experiments reproducible)
+	- for the repo files, provide step-by-step instructions to get the output (experiments reproducible)
 
 ## github repo
 ✅ ultimate update
@@ -85,15 +85,16 @@ nvidia-smi
 	✅ FPS
 	✅ CPU usage
 
-🔲 Dataset: A new dataset that includes snow in its images, such as the ACDC and CADC datasets.
-	🔲 check whether keep on with MIO-TCD or switch to a new one.
-🔲 Model: A YOLO model, which is tuned for such weather conditions.
-	🔲 papers in this area: need to check if they are based on YOLO26n.
-	🔲 find the literature gap for possible contribution.
+✅ Dataset: A new dataset that includes snow in its images, such as the ACDC and CADC datasets.
+	✖ check whether keep on with MIO-TCD or switch to a new one.
+✅ Model: A YOLO model, which is tuned for such weather conditions.
+	✅ papers in this area: need to check if they are based on YOLO26n.
+	✅ find the literature gap for possible contribution.
 ✅ results report
 
-🔲 learn more scripts
 ✅ invest image results
+🔲 run on PC
+🔲 learn more scripts
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 7
