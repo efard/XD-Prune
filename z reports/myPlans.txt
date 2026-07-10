@@ -11,16 +11,6 @@ Bottleneck ranking		top 5 slowest layers
 Error sensitivity ranking	top 5 most accuracy-sensitive layers
 Short summary			哪些 layer 值得優化，哪些 layer 不應該大幅壓縮
 
------ ----- ~ ----- ----- ~ ----- -----
-find . -type f | wc -l
-rm -r folder/*
-mv /from /to
-rsync -a --info=progress2 /fromFolder /toFolder
-ln -s /theFolder /toShortcutPosition
-
-ssh platogpu007
-quota -s
-nvidia-smi
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 5
 ✅ discussed in our meeting, review at least two publications in this area, Instead of heuristic separation:
@@ -93,12 +83,32 @@ nvidia-smi
 ✅ results report
 
 ✅ invest image results
+
+----- ----- ~ ----- ----- ~ ----- -----
+find . -type f | wc -l
+rm -r folder/*
+mv /from /to
+rsync -a --info=progress2 /fromFolder /toFolder
+ln -s /theFolder /toShortcutPosition
+
+ssh platogpu007
+quota -s
+nvidia-smi
+----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖✦
+# 7
+Run YOLO inference on an embedded platform (e.g., ARM)
+
 🔲 run on PC
 🔲 learn more scripts
 
------ ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
-# 7
-Run YOLO inference on an embedded platform (e.g., ARM)
+✅ Prunability equation update if needed
+🔲✦ final model (after prune and quantized)
+
+🔲 PYNQ HW/SW co-design planning
+✅ Invest NN visualization		
+🔲 Plan details (and hopefully run) YOLO inference on an embedded platform (e.g., ARM)
+
+🔲 Confirm competitors & potential research gap on snow traffic YOLO26n
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 8

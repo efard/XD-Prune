@@ -1,0 +1,10 @@
+layer_id,layer_type,conv_name,out_channels,pruned_output_channels,amount,new_zero_weights
+16,C3k2,cv1.conv,64,3,0.05,768
+16,C3k2,cv2.conv,64,3,0.05,288
+16,C3k2,m.0.cv1.conv,16,1,0.05,32
+16,C3k2,m.0.cv2.conv,16,1,0.05,32
+16,C3k2,m.0.cv3.conv,32,2,0.05,64
+16,C3k2,m.0.m.0.cv1.conv,16,1,0.05,144
+16,C3k2,m.0.m.0.cv2.conv,16,1,0.05,144
+16,C3k2,m.0.m.1.cv1.conv,16,1,0.05,144
+16,C3k2,m.0.m.1.cv2.conv,16,1,0.05,144

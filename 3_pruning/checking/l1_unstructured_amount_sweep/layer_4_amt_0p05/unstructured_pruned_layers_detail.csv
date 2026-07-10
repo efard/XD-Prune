@@ -1,0 +1,5 @@
+layer_id,layer_type,conv_name,total_weights,pruned_weights,amount,new_zero_weights
+4,C3k2,cv1.conv,4096,205,0.05,205
+4,C3k2,cv2.conv,12288,614,0.05,614
+4,C3k2,m.0.cv1.conv,4608,230,0.05,230
+4,C3k2,m.0.cv2.conv,4608,230,0.05,230
