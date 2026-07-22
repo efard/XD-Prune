@@ -1,0 +1,24 @@
+layer_id,layer_type,layer_params,params_percent,gen_baseline_map50_95,gen_deleted_map50_95,ad_gen_map50_95,mode,adapter_details
+11,Upsample,0,0.000000,0.506632,0.506632,0.000000,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(20, 20)_to_(40, 40); channels_unchanged"
+12,Concat,0,0.000000,0.506632,0.506632,0.000000,adapted_bypass,input_tensors=2; multi_input_policy=concat; source_0_spatial_unchanged; source_1_spatial_unchanged; concatenated_inputs_along_channels; spatial_unchanged; channels_unchanged
+14,Upsample,0,0.000000,0.506632,0.506632,0.000000,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(40, 40)_to_(80, 80); channels_unchanged"
+15,Concat,0,0.000000,0.506632,0.506632,0.000000,adapted_bypass,input_tensors=2; multi_input_policy=concat; source_0_spatial_unchanged; source_1_spatial_unchanged; concatenated_inputs_along_channels; spatial_unchanged; channels_unchanged
+18,Concat,0,0.000000,0.506632,0.506632,0.000000,adapted_bypass,input_tensors=2; multi_input_policy=concat; source_0_spatial_unchanged; source_1_spatial_unchanged; concatenated_inputs_along_channels; spatial_unchanged; channels_unchanged
+21,Concat,0,0.000000,0.506632,0.506632,0.000000,adapted_bypass,input_tensors=2; multi_input_policy=concat; source_0_spatial_unchanged; source_1_spatial_unchanged; concatenated_inputs_along_channels; spatial_unchanged; channels_unchanged
+9,SPPF,164608,6.563082,0.506632,0.436350,0.070282,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_unchanged
+20,Conv,147712,5.889422,0.506632,0.353487,0.153146,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(40, 40)_to_(20, 20); channels_unchanged"
+22,C3k2,463104,18.464409,0.506632,0.344534,0.162098,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_crop_384_to_256
+17,Conv,36992,1.474907,0.506632,0.178985,0.327647,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(80, 80)_to_(40, 40); channels_unchanged"
+7,Conv,295424,11.778844,0.506632,0.178178,0.328455,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(40, 40)_to_(20, 20); channels_zero_pad_128_to_256"
+8,C3k2,346112,13.799824,0.506632,0.146583,0.360050,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_unchanged
+16,C3k2,34304,1.367734,0.506632,0.102450,0.404183,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_crop_256_to_64
+19,C3k2,95232,3.796993,0.506632,0.062945,0.443687,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_crop_192_to_128
+10,C2PSA,249728,9.956899,0.506632,0.030004,0.476628,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_unchanged
+13,C3k2,119808,4.776862,0.506632,0.017730,0.488902,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_crop_384_to_128
+5,Conv,147712,5.889422,0.506632,0.000650,0.505982,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(80, 80)_to_(40, 40); channels_unchanged"
+6,C3k2,87040,3.470370,0.506632,0.000441,0.506191,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_unchanged
+1,Conv,4672,0.186277,0.506632,0.000014,0.506619,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(320, 320)_to_(160, 160); channels_zero_pad_16_to_32"
+3,Conv,36992,1.474907,0.506632,0.000001,0.506631,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(160, 160)_to_(80, 80); channels_unchanged"
+0,Conv,464,0.018500,0.506632,0.000000,0.506632,adapted_bypass,"input_tensors=1; multi_input_policy=concat; spatial_resize_(640, 640)_to_(320, 320); channels_zero_pad_3_to_16"
+2,C3k2,6640,0.264743,0.506632,0.000000,0.506632,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_zero_pad_32_to_64
+4,C3k2,26080,1.039835,0.506632,0.000001,0.506632,adapted_bypass,input_tensors=1; multi_input_policy=concat; spatial_unchanged; channels_zero_pad_64_to_128

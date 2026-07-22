@@ -98,27 +98,46 @@ nvidia-smi
 # 7
 Run YOLO inference on an embedded platform (e.g., ARM)
 
-🔲 run on PC
-🔲 learn more scripts
-
 ✅ Prunability equation update if needed
-🔲✦ final model (after prune and quantized)
 
-🔲 PYNQ HW/SW co-design planning
-✅ Invest NN visualization		
+✅ Invest NN visualization
+🔲 PYNQ HW/SW co-design planning		
 🔲 Plan details (and hopefully run) YOLO inference on an embedded platform (e.g., ARM)
-
-🔲 Confirm competitors & potential research gap on snow traffic YOLO26n
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 8
 Hardware / software partitioning
 Which layers should be run on FPGA
 
+-✦ final model (after prune and quantized)
+- run on PC
+
+- learn more scripts
+
+competitors & potential research gap
+✅ on snow traffic YOLO26n
+✅ error injection
+✅ pruning
+
+# 8.1 Novelty
+✅ methodology (other papers)
+✅ Mio + Snow Prun-ability (whole layer)
+- YOLO26n edit
+
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 9
 1.	Resource utilization
 2.	Latency & throughput measurement
+
+✅ competitor: XWOD
+✅ review: weather-aware sensitivity-guided YOLO26n pruning for resource-limited devices
+
+✅ finalize the sensitivity and prunability formulations
+🔲 table update based on new formulation
+🔲 How many layers should be removed: prune the layers as long as the model fits the selected embedded platform
+
+✅ embedded platform (PYNQ-Z2 PS) initial test
+🔲 embedded platform baseline model test
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 10

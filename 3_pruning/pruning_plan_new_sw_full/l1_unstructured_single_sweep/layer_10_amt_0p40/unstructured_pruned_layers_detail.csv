@@ -1,0 +1,8 @@
+layer_id,layer_type,conv_name,total_weights,pruned_weights,amount,new_zero_weights
+10,C2PSA,cv1.conv,65536,26214,0.4,26214
+10,C2PSA,cv2.conv,65536,26214,0.4,26214
+10,C2PSA,m.0.attn.qkv.conv,32768,13107,0.4,13107
+10,C2PSA,m.0.attn.proj.conv,16384,6554,0.4,6554
+10,C2PSA,m.0.attn.pe.conv,1152,461,0.4,461
+10,C2PSA,m.0.ffn.0.conv,32768,13107,0.4,13107
+10,C2PSA,m.0.ffn.1.conv,32768,13107,0.4,13107

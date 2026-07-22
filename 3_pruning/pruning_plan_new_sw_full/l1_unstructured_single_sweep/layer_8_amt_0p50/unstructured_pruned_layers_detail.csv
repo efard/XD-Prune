@@ -1,0 +1,10 @@
+layer_id,layer_type,conv_name,total_weights,pruned_weights,amount,new_zero_weights
+8,C3k2,cv1.conv,65536,32768,0.5,32768
+8,C3k2,cv2.conv,98304,49152,0.5,49152
+8,C3k2,m.0.cv1.conv,8192,4096,0.5,4096
+8,C3k2,m.0.cv2.conv,8192,4096,0.5,4096
+8,C3k2,m.0.cv3.conv,16384,8192,0.5,8192
+8,C3k2,m.0.m.0.cv1.conv,36864,18432,0.5,18432
+8,C3k2,m.0.m.0.cv2.conv,36864,18432,0.5,18432
+8,C3k2,m.0.m.1.cv1.conv,36864,18432,0.5,18432
+8,C3k2,m.0.m.1.cv2.conv,36864,18432,0.5,18432
