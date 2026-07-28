@@ -137,11 +137,25 @@ competitors & potential research gap
 🔲 How many layers should be removed: prune the layers as long as the model fits the selected embedded platform
 
 ✅ embedded platform (PYNQ-Z2 PS) initial test
-🔲 embedded platform baseline model test
+✅ embedded platform baseline model test
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 10
 Comparison vs software baseline (accuracy vs speed trade-off)
+
+mAP50–95
+mAP50
+Precision
+Recall
+Per-class AP
+Number of parameters
+Model file size
+FLOPs
+Latency per image
+Frames per second
+Peak memory usage
+CPU usage
+Power usage
 
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 11

@@ -1,0 +1,49 @@
+{
+  "environment_id": "windows_rtx4060_ultralytics_8_4_21_v1",
+  "captured_local_date": "2026-07-16",
+  "workspace_root": "C:\\Users\\Lenovo\\Desktop\\MITACS_Project_Stuff",
+  "operating_system": {
+    "edition": "Windows 11 Pro",
+    "platform_reported_by_python": "Windows-10-10.0.26200-SP0",
+    "build": "10.0.26200"
+  },
+  "python": {
+    "version": "3.11.0",
+    "executable": "C:\\Program Files\\Python311\\python.exe"
+  },
+  "packages": {
+    "ultralytics": "8.4.21",
+    "torch": "2.4.1+cu121",
+    "torchvision": "0.19.1+cu121",
+    "numpy": "2.2.6",
+    "opencv-python": "4.12.0.88",
+    "pillow": "12.3.0",
+    "pyyaml": "6.0.3",
+    "scipy": "1.16.1",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.3",
+    "tqdm": "4.67.1",
+    "psutil": "7.1.0"
+  },
+  "cuda": {
+    "torch_runtime": "12.1",
+    "cudnn": 90100,
+    "available_when_captured": true
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver": "591.74",
+    "memory_mib_reported_by_nvidia_smi": 8188,
+    "total_memory_bytes_reported_by_torch": 8585216000,
+    "compute_capability": "8.9"
+  },
+  "host": {
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13650HX",
+    "physical_memory_bytes": 34053414912
+  },
+  "notes": [
+    "The environment is frozen for the primary local baseline runs.",
+    "If a remote server is used, create a separately hashed environment record and do not overwrite this file.",
+    "The checkpoint contains older Ultralytics serialization metadata; its exact binary SHA-256 is the authoritative initialization identity."
+  ]
+}

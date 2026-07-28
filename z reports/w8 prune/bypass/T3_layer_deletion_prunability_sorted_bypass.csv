@@ -1,0 +1,5 @@
+layer_id,layer_type,layer_params,params_percent,ad_gen_map50_95,ad_snow_map50_95,combined_sensitivity,deletion_score,mode,adapter_details
+9,SPPF,164608,6.563082,0.070282,-0.004974,0.032654,200.987597,bypass,strict_identity_no_shape_adapter
+8,C3k2,346112,13.799824,0.360050,-0.004441,0.177804,77.612503,bypass,strict_identity_no_shape_adapter
+10,C2PSA,249728,9.956899,0.476628,0.014138,0.245383,40.576973,bypass,strict_identity_no_shape_adapter
+6,C3k2,87040,3.470370,0.506191,0.020819,0.263505,13.170032,bypass,strict_identity_no_shape_adapter

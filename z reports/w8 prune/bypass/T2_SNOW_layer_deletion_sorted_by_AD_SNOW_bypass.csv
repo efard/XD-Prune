@@ -1,0 +1,5 @@
+layer_id,layer_type,layer_params,params_percent,snow_baseline_map50_95,snow_deleted_map50_95,ad_snow_map50_95,mode,adapter_details
+9,SPPF,164608,6.563082,0.020819,0.025793,-0.004974,bypass,strict_identity_no_shape_adapter
+8,C3k2,346112,13.799824,0.020819,0.025260,-0.004441,bypass,strict_identity_no_shape_adapter
+10,C2PSA,249728,9.956899,0.020819,0.006681,0.014138,bypass,strict_identity_no_shape_adapter
+6,C3k2,87040,3.470370,0.020819,0.000000,0.020819,bypass,strict_identity_no_shape_adapter

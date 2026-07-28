@@ -1,0 +1,2 @@
+model,idle_power_w,average_inference_power_w,peak_inference_power_w,dynamic_power_w,energy_j_per_image
+baseline_full,,,,,

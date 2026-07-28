@@ -1,0 +1,40 @@
+Subject: Re: PYNQ baseline and pruning competitor settings
+
+Dear Ebrahim and Ho Yin,
+
+Thank you for the report and the PYNQ-Z2 baseline results. The result that NCNN inference accounts for about 99% of the processing time is especially useful, since it gives a clear baseline for measuring whether pruning reduces actual ARM inference time.
+
+For the standard pruning competitors, I confirm the following controls:
+
+- Target whole-model parameter reduction: approximately 10.25%. Because structured groups are discrete, please use the closest dependency-safe result and report the exact achieved reduction.
+- Local pruning ratio: 25% of the live channels whenever a root group is selected.
+- Recovery budget: 20 epochs.
+- Input size: 640 x 640.
+- Batch size: 16.
+- Optimizer: AdamW, with lr0 = 0.001, lrf = 0.01, momentum = 0.9 and weight decay = 0.0005.
+- Warm-up: 1 epoch.
+- Seed: 42, with deterministic mode enabled.
+- Mixed precision training: enabled.
+- Training workers: 4.
+- No separate BatchNorm-only recalibration was used. BatchNorm statistics were updated during normal fine-tuning.
+
+For evaluation, I used the validation split in FP32 with batch size 16, rectangular batches, confidence threshold 0.001, NMS IoU threshold 0.70, maximum 300 detections, and no test-time augmentation. The GEN MIO-TCD split contains 88,000 training, 11,000 validation and 11,000 test images. The SNOW ACDC split contains 400 training, 100 validation and 500 test images. The test sets were not used for pruning decisions.
+
+Using these fixed validation settings, the GEN baseline has 2,508,090 parameters, mAP50-95 = 0.647145 and mAP50 = 0.830967. The SNOW baseline has 2,506,920 parameters, mAP50-95 = 0.191981 and mAP50 = 0.326256.
+
+The three suggested competitors are suitable:
+
+1. Global L1 channel-magnitude structured pruning
+2. Standard Torch-Pruning without the proposed dual-domain ranking
+3. Random structured channel pruning using seed 42
+
+Please use dependency-consistent channel pruning and the same protected roots, rather than zeroing channels or replacing complete layers. The main competitor run can begin with the confirmed GEN checkpoint. For the dual-domain comparison, I suggest reproducing the final dependency-safe architecture from the SNOW checkpoint as well, using the same parameter-reduction and recovery budgets.
+
+I have attached a reproduction package containing the GEN and SNOW baseline checkpoints, exact split manifests, dataset YAML files, training and evaluation settings, protected/validated group manifests, reference tables and file checksums. Dataset images are not included, so only the local dataset root paths need to be updated.
+
+One small dataset-count clarification: the full MIO-TCD pool contains 110,000 images, divided into 88,000 training, 11,000 validation and 11,000 test images. This is why my training count appears as 88,000 even though the complete prepared dataset contains 110,000 images.
+
+For the additional dataset, my concern with CADC remains that its main annotations are 3D and are not directly compatible with the current 2D YOLO pipeline. I think BDD100K is the cleaner additional large-scale option, but I will follow Ebrahim's decision before preparing it.
+
+Best regards,
+Rafed
