@@ -1,0 +1,50 @@
+{
+  "target_percent": 10.25,
+  "relative_tolerance": 0.05,
+  "accepted_range_percent": [
+    9.737499999999999,
+    10.762500000000001
+  ],
+  "candidate_generation_rule": "all parameterized combinations of size 1 through max_combination_size for which both estimated GEN and estimated SNOW reductions fall inside the accepted range",
+  "candidate_count": 32,
+  "successful_candidate_count": 32,
+  "failed_candidate_count": 0,
+  "combination_size_counts": {
+    "1": 1,
+    "2": 7,
+    "3": 24
+  },
+  "negative_accuracy_drop_policy": "retain signed values; no abs() and no zero clamp",
+  "T3_formula_used": false,
+  "local_baselines": {
+    "GEN": {
+      "map50_95": 0.6414207460892849,
+      "map50": 0.8300363458988546,
+      "map75": 0.7199083476344472,
+      "precision": 0.7988991271081674,
+      "recall": 0.7786299650855113,
+      "latency_ms": 1.242506352930584,
+      "fps": 804.8248587553643
+    },
+    "SNOW": {
+      "map50_95": 0.1899135424242684,
+      "map50": 0.324111751802454,
+      "map75": 0.18330102208122953,
+      "precision": 0.5726809138572879,
+      "recall": 0.2530735194640704,
+      "latency_ms": 1.4833836536854506,
+      "fps": 674.1344341468985
+    }
+  },
+  "best_by_target_distance": "C001",
+  "best_by_GEN_signed_AD": "C007",
+  "best_by_SNOW_signed_AD": "C007",
+  "outputs": {
+    "individual_parameterized_layers": "/home/afm176/yolo_project/5_reproduction/stage3_results/near_target_20260729_172754/individual_parameterized_layer_results.csv",
+    "candidate_search_space": "/home/afm176/yolo_project/5_reproduction/stage3_results/near_target_20260729_172754/near_target_candidate_search_space.csv",
+    "raw": "/home/afm176/yolo_project/5_reproduction/stage3_results/near_target_20260729_172754/raw_near_target_combination_results.csv",
+    "by_target_distance": "/home/afm176/yolo_project/5_reproduction/stage3_results/near_target_20260729_172754/near_target_results_sorted_by_target_distance.csv",
+    "by_GEN_AD": "/home/afm176/yolo_project/5_reproduction/stage3_results/near_target_20260729_172754/near_target_results_sorted_by_GEN_signed_AD.csv",
+    "by_SNOW_AD": "/home/afm176/yolo_project/5_reproduction/stage3_results/near_target_20260729_172754/near_target_results_sorted_by_SNOW_signed_AD.csv"
+  }
+}

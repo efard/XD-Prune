@@ -1,0 +1,2 @@
+layer_id,layer_type,gen_layer_params,gen_params_reduced,gen_params_reduction_percent,gen_baseline_map50_95,gen_replaced_map50_95,ad_gen_map50_95,gen_replaced_map50,gen_replaced_map75,gen_model_path
+7,Conv,295424,295424,11.77884366191006,0.6414207460892849,0.13301711730031124,0.5084036287889737,0.18503516292808833,0.15117949375452766,5_reproduction/stage2_results/smoke_L7/saved_replaced_models/GEN_replace_L7_Conv.pt

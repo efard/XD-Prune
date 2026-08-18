@@ -1,0 +1,16 @@
+path: /project/ko/afm176/datasets/1_data/reproduction_exact_v1/GEN_MIO_TCD_exact_val5pct_seed42
+train: images/val
+val: images/val
+nc: 11
+names:
+  0: articulated_truck
+  1: bicycle
+  2: bus
+  3: car
+  4: motorcycle
+  5: motorized_vehicle
+  6: non_motorized_vehicle
+  7: pedestrian
+  8: pickup_truck
+  9: single_unit_truck
+  10: work_van

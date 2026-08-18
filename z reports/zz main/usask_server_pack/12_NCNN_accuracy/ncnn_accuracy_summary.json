@@ -1,0 +1,107 @@
+{
+  "status": "PASSED_NCNN_ACCURACY_SWEEP",
+  "model_root": "/home/afm176/yolo_project/models",
+  "models_discovered": 23,
+  "models_successful": 22,
+  "models_failed": 0,
+  "models_skipped_incompatible": 1,
+  "gen_dataset": "/project/ko/afm176/datasets/1_data/reproduction_exact_v1/GEN_MIO_TCD_exact/dataset_GEN_local.yaml",
+  "snow_dataset": "/project/ko/afm176/datasets/1_data/reproduction_exact_v1/SNOW_ACDC_exact/dataset_SNOW_local.yaml",
+  "evaluation": {
+    "split": "val",
+    "batch": 1,
+    "device": "cpu",
+    "confidence_threshold": 0.001,
+    "nms_iou_threshold": 0.7,
+    "max_detections": 300,
+    "rectangular_batches": true,
+    "test_time_augmentation": false,
+    "input_size": "read independently from each NCNN metadata.yaml"
+  },
+  "environment": {
+    "python": "3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0]",
+    "platform": "Linux-5.14.0-570.30.1.el9_6.x86_64-x86_64-with-glibc2.39"
+  },
+  "best_models_by_map50_95": [
+    {
+      "model": "2_baseline_full/full_gen_fp16_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP16",
+      "imgsz": 640,
+      "map50_95": 0.6421198744843533,
+      "map50": 0.8308002846946475
+    },
+    {
+      "model": "2_baseline_full/full_gen_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 640,
+      "map50_95": 0.6417495448634617,
+      "map50": 0.8306984188633355
+    },
+    {
+      "model": "2_baseline_full/full_gen_480_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 480,
+      "map50_95": 0.6289189101825708,
+      "map50": 0.8187930848304056
+    },
+    {
+      "model": "4_layer_replacement/LR_gen_p10_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 640,
+      "map50_95": 0.6226733815316502,
+      "map50": 0.8192648663423211
+    },
+    {
+      "model": "3_L1_pruned/L1_gen_p10_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 640,
+      "map50_95": 0.6178644909627035,
+      "map50": 0.8111139685769245
+    },
+    {
+      "model": "4_layer_replacement/LR_p56_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 640,
+      "map50_95": 0.5795935826426442,
+      "map50": 0.7784041967203266
+    },
+    {
+      "model": "2_baseline_full/full_gen_320_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 320,
+      "map50_95": 0.5735911023505684,
+      "map50": 0.7699504462843115
+    },
+    {
+      "model": "4_layer_replacement/LR_gen_p10_320_fp16_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP16",
+      "imgsz": 320,
+      "map50_95": 0.5638987782083815,
+      "map50": 0.76302067388341
+    },
+    {
+      "model": "4_layer_replacement/LR_gen_p10_320_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 320,
+      "map50_95": 0.5636996034150511,
+      "map50": 0.7628207620781148
+    },
+    {
+      "model": "1_baseline_light/light_gen_640_ncnn_model",
+      "domain": "GEN",
+      "variant": "FP32",
+      "imgsz": 640,
+      "map50_95": 0.550349250781333,
+      "map50": 0.7302204951108354
+    }
+  ]
+}

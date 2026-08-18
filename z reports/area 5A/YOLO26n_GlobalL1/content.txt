@@ -1,0 +1,7 @@
+YOLO26n GLOBAL L1
+
+- models/GEN_global_L1_42root_recovered_best.pt
+- models/SNOW_global_L1_42root_recovered_best.pt
+
+GEN: 2,250,880 parameters, raw mAP50-95 0.0000, recovered mAP50-95 0.616504, 96.12% baseline retention.
+SNOW: 2,250,272 parameters, raw mAP50-95 0.0000, recovered mAP50-95 0.103160, 54.32% baseline retention.

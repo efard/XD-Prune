@@ -1,0 +1,34 @@
+{
+  "local_baselines_used_for_accuracy_drops": {
+    "GEN": {
+      "map50_95": 0.6414207460892849,
+      "map50": 0.8300363458988546,
+      "map75": 0.7199083476344472,
+      "precision": 0.7988991271081674,
+      "recall": 0.7786299650855113,
+      "latency_ms": 1.238746269013394,
+      "fps": 807.2678199034701
+    },
+    "SNOW": {
+      "map50_95": 0.1899135424242684,
+      "map50": 0.324111751802454,
+      "map75": 0.18330102208122953,
+      "precision": 0.5726809138572879,
+      "recall": 0.2530735194640704,
+      "latency_ms": 1.4554413687437773,
+      "fps": 687.0768012201835
+    }
+  },
+  "source_reference_metrics_are_not_used_as_denominators": true,
+  "status_counts": {
+    "ok": 17,
+    "skipped_zero_parameter_layer": 6
+  },
+  "successful_layer_count": 17,
+  "output_files": {
+    "raw": "/home/afm176/yolo_project/5_reproduction/stage2_results/layer_replacement_sweep_20260729_151557/raw_dual_domain_layer_replacement.csv",
+    "T1": "/home/afm176/yolo_project/5_reproduction/stage2_results/layer_replacement_sweep_20260729_151557/T1_GEN_layer_replacement.csv",
+    "T2": "/home/afm176/yolo_project/5_reproduction/stage2_results/layer_replacement_sweep_20260729_151557/T2_SNOW_layer_replacement.csv",
+    "T3": "/home/afm176/yolo_project/5_reproduction/stage2_results/layer_replacement_sweep_20260729_151557/T3_dual_domain_SWPrunability.csv"
+  }
+}

@@ -162,6 +162,13 @@ Power usage
 1.	Power & efficiency analysis
 2.	Final evaluation
 
+actions:
+2.1 Resolutions
+2.2 Pruning (20%, 50%, 90%) [time consuming]
+2.3 INT8 Quantitation
+2.4 ncnn ARM build improves
+2.5 FPGA PL (SW / HW) [time consuming]
+
 ----- ----- ~ ----- ----- ~ ----- ----- ✅🔲✖
 # 12
 1.	Prepare figures, tables on what I worked

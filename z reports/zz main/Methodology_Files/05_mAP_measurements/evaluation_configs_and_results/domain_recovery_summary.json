@@ -1,0 +1,125 @@
+{
+  "domain": "GEN",
+  "status": "PASSED_FULL_20E_RECOVERY",
+  "checks": {
+    "training_completed": true,
+    "exactly_20_epoch_rows": true,
+    "all_training_values_finite": true,
+    "trained_parameters_preserved": true,
+    "trained_architecture_preserved": true,
+    "best_parameters_preserved": true,
+    "last_parameters_preserved": true,
+    "best_architecture_preserved": true,
+    "last_architecture_preserved": true,
+    "best_forward_outputs_finite": true,
+    "last_forward_outputs_finite": true,
+    "copied_best_matches_original_best": true,
+    "copied_last_matches_original_last": true,
+    "final_validation_completed": true
+  },
+  "source": {
+    "checkpoint": "/home/afm176/yolo_project/5_reproduction/global_l1_56_exact_gen_results/GEN_global_L1_56_exact_20260810_031623/raw_stage5c/GEN/GEN_global_L1_42root_raw.pt",
+    "checkpoint_sha256": "09e4b325f29592b13a34f91987faf3f2794a8d461c234637632722db5e4a6ac6",
+    "checkpoint_size_bytes": 4841885,
+    "parameters": 1091008,
+    "architecture_sha256": "661b74a1c18ea35458779905e08e3da71052beb0dfc9ae9ac9f2802818deb556",
+    "forward_pass_ok": true,
+    "output_tensor_count": 11,
+    "all_output_tensors_finite": true
+  },
+  "trained_model": {
+    "parameters": 1091008,
+    "architecture_sha256": "661b74a1c18ea35458779905e08e3da71052beb0dfc9ae9ac9f2802818deb556"
+  },
+  "best": {
+    "checkpoint": "/home/afm176/yolo_project/5_reproduction/global_l1_56_exact_gen_results/GEN_global_L1_56_exact_20260810_031623/recovery/train_run/weights/best.pt",
+    "checkpoint_sha256": "98bae0b5f283938d010b7d1b2e7e80733ad21150a8ce6e6afa626253bd7e09e7",
+    "checkpoint_size_bytes": 2540869,
+    "parameters": 1091008,
+    "architecture_sha256": "661b74a1c18ea35458779905e08e3da71052beb0dfc9ae9ac9f2802818deb556",
+    "forward_pass_ok": true,
+    "output_tensor_count": 11,
+    "all_output_tensors_finite": true
+  },
+  "last": {
+    "checkpoint": "/home/afm176/yolo_project/5_reproduction/global_l1_56_exact_gen_results/GEN_global_L1_56_exact_20260810_031623/recovery/train_run/weights/last.pt",
+    "checkpoint_sha256": "67ac0efd8c552824a9c9f104aa584f48ad2c96dbcbf084c01201e7afc91f5124",
+    "checkpoint_size_bytes": 2540869,
+    "parameters": 1091008,
+    "architecture_sha256": "661b74a1c18ea35458779905e08e3da71052beb0dfc9ae9ac9f2802818deb556",
+    "forward_pass_ok": true,
+    "output_tensor_count": 11,
+    "all_output_tensors_finite": true
+  },
+  "recovered_best_copy": {
+    "checkpoint": "/home/afm176/yolo_project/5_reproduction/global_l1_56_exact_gen_results/GEN_global_L1_56_exact_20260810_031623/recovery/GEN_global_L1_42root_recovered_best.pt",
+    "checkpoint_sha256": "98bae0b5f283938d010b7d1b2e7e80733ad21150a8ce6e6afa626253bd7e09e7",
+    "checkpoint_size_bytes": 2540869,
+    "parameters": 1091008,
+    "architecture_sha256": "661b74a1c18ea35458779905e08e3da71052beb0dfc9ae9ac9f2802818deb556",
+    "forward_pass_ok": true,
+    "output_tensor_count": 11,
+    "all_output_tensors_finite": true
+  },
+  "recovered_last_copy": {
+    "checkpoint": "/home/afm176/yolo_project/5_reproduction/global_l1_56_exact_gen_results/GEN_global_L1_56_exact_20260810_031623/recovery/GEN_global_L1_42root_recovered_last.pt",
+    "checkpoint_sha256": "67ac0efd8c552824a9c9f104aa584f48ad2c96dbcbf084c01201e7afc91f5124",
+    "checkpoint_size_bytes": 2540869,
+    "parameters": 1091008,
+    "architecture_sha256": "661b74a1c18ea35458779905e08e3da71052beb0dfc9ae9ac9f2802818deb556",
+    "forward_pass_ok": true,
+    "output_tensor_count": 11,
+    "all_output_tensors_finite": true
+  },
+  "training_results": {
+    "rows": 20,
+    "expected_rows": 20,
+    "has_20_rows": true,
+    "all_numeric_values_finite": true,
+    "nonfinite_values": [],
+    "last_numeric_values": {
+      "epoch": 20.0,
+      "time": 9005.1,
+      "train/box_loss": 1.34609,
+      "train/cls_loss": 1.19456,
+      "train/dfl_loss": 0.00575,
+      "metrics/precision(B)": 0.55608,
+      "metrics/recall(B)": 0.48645,
+      "metrics/mAP50(B)": 0.5091,
+      "metrics/mAP50-95(B)": 0.35995,
+      "val/box_loss": 1.18475,
+      "val/cls_loss": 1.0133,
+      "val/dfl_loss": 0.00718,
+      "lr/pg0": 5.95e-05,
+      "lr/pg1": 5.95e-05,
+      "lr/pg2": 5.95e-05
+    },
+    "last_loss_values": {
+      "train/box_loss": 1.34609,
+      "train/cls_loss": 1.19456,
+      "train/dfl_loss": 0.00575,
+      "val/box_loss": 1.18475,
+      "val/cls_loss": 1.0133,
+      "val/dfl_loss": 0.00718
+    },
+    "best_training_map50_95": 0.35995
+  },
+  "final_metrics": {
+    "baseline_map50_95": 0.6414207461,
+    "raw_map50_95": 0.0,
+    "recovered_map50_95": 0.36046653066216106,
+    "signed_accuracy_drop_map50_95": 0.28095421543783894,
+    "accuracy_retention_percent": 56.19814027748378,
+    "recovery_gain_map50_95": 0.36046653066216106,
+    "baseline_map50": 0.8300363459,
+    "raw_map50": 0.0,
+    "recovered_map50": 0.5090792399652432,
+    "signed_accuracy_drop_map50": 0.3209571059347568,
+    "recovery_gain_map50": 0.5090792399652432,
+    "recovered_map75": 0.4070445487205518,
+    "recovered_precision": 0.5596565664867562,
+    "recovered_recall": 0.4840956952925907
+  },
+  "training_elapsed_seconds": 9110.474980354309,
+  "output_dir": "/home/afm176/yolo_project/5_reproduction/global_l1_56_exact_gen_results/GEN_global_L1_56_exact_20260810_031623/recovery"
+}

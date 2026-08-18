@@ -1,0 +1,31 @@
+{
+  "stage": "5C raw model creation and validation",
+  "method": "Deterministic replay of incremental Global L1 dependency-aware structured pruning plans",
+  "generic_roots_included": 42,
+  "custom_roots_excluded": 9,
+  "maximum_root_pruning_fraction": 0.5,
+  "absolute_minimum_channels": 4,
+  "validation": {
+    "split": "val",
+    "imgsz": 640,
+    "batch": 16,
+    "workers": 4,
+    "half": false,
+    "rect": true,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "augment": false
+  },
+  "recovery_training_performed": false,
+  "frozen_baselines": {
+    "GEN": {
+      "map50_95": 0.6414207461,
+      "map50": 0.8300363459
+    },
+    "SNOW": {
+      "map50_95": 0.1899135424,
+      "map50": 0.3241117518
+    }
+  }
+}

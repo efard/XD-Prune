@@ -1,0 +1,22 @@
+{
+  "experiment": "Deterministic incremental Global L1 dependency-aware structured channel pruning",
+  "stage": "5B V2 parameter-target search",
+  "selection_rule": "At every step, rank all currently eligible output filters from the 42 generic roots by raw L1 weight magnitude and prune the smallest safe dependency group.",
+  "accuracy_or_sensitivity_used_for_selection": false,
+  "target_parameters": {
+    "GEN": 2250986,
+    "SNOW": 2249816
+  },
+  "scope": {
+    "generic_roots_included": 42,
+    "custom_roots_excluded": 9,
+    "protected_root_rows": 54
+  },
+  "trace_mode": "eval_all_outputs",
+  "maximum_root_pruning_fraction": 0.5,
+  "absolute_minimum_channels": 4,
+  "seed": 42,
+  "no_model_saved": true,
+  "no_training": true,
+  "no_accuracy_evaluation": true
+}

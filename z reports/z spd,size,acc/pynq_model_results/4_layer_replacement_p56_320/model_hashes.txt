@@ -1,0 +1,3 @@
+0735e2e60727a3060ef14644516e3667bdbc04d224b7f64702906b2aac94602c  /home/xilinx/yolo26_ps/1_models/4_layer_replacement_p56_320/model.ncnn.param
+2c34a4dc5781f2ae6bbe851e15e7fcbea2604116c52ade6978e22841304185cd  /home/xilinx/yolo26_ps/1_models/4_layer_replacement_p56_320/model.ncnn.bin
+549879116ff90ef89bf98e9c8cf9bcf366f0abc32eafcc23a916ff4cfa8560d0  /home/xilinx/yolo26_ps/1_models/4_layer_replacement_p56_320/metadata.yaml

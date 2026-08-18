@@ -1,0 +1,12 @@
+{
+  "mode": "full",
+  "tasks_ok": 4,
+  "tasks_failed": 0,
+  "selected_candidates": {
+    "C007": "layers 9,19",
+    "L9": "layer 9"
+  },
+  "negative_accuracy_drop_policy": "retain_signed",
+  "t3_formula_used": false,
+  "output_folder": "/home/afm176/yolo_project/5_reproduction/stage4_results/recovery_C007_L9_20260729_192450"
+}
