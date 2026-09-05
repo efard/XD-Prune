@@ -13,14 +13,14 @@ YOLO on PYNQ for Smart Traffic Systems.
 - **[Size, Speed & Accuracy](7_size_speed_accuracy.md)** — Measure NCNN model size, runtime speed, and accuracy on server and PYNQ.
 - **[PC ↔ PYNQ Live Video](8_pc_pynq_video.md)** — Run live video inference via TCP between PC client and PYNQ NCNN server.
 
-## How to Use
+## In Short
 
 1. Start with **training** to produce baseline models.  
-2. Run **profiling** and **error injection** for performance and robustness insights.  
-3. Apply **Global L1** or **Layer Replacement pruning** for pruned models.  
-4. Export pruned models to **NCNN** for deployment.  
-5. Evaluate **size, speed, and accuracy** on server or PYNQ board.  
-6. Optionally, test **live video streaming** from PC to PYNQ.
+ 2, 3. Run **profiling** and **error injection** for performance and robustness insights.  
+ 4, 5. Apply **Global L1** or **Layer Replacement pruning** for pruned models.  
+ 6\. Export pruned models to **NCNN** for deployment.  
+ 7\. Evaluate **size, speed, and accuracy** on server or PYNQ board.  
+ 8\. Test **live video streaming** from PC to PYNQ.
 
 ---
 

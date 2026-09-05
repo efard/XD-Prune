@@ -46,11 +46,11 @@ mlruns/
 *.pth
 *.ckpt
 #*.onnx
-*.engine
+#*.engine
 *.tflite
 *.pb
-*.param
-*.bin
+#*.param
+#*.bin
 *.weights
 *.safetensors
 
