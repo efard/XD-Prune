@@ -1,4 +1,0 @@
-NCNN model load: PASS
-Parameter file: "1_models/baseline_full/model.ncnn.param"
-Weight file:    "1_models/baseline_full/model.ncnn.bin"
-Metadata file:  "1_models/baseline_full/metadata.yaml"

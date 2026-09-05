@@ -1,3 +1,0 @@
-layer_id,layer_type,conv_name,total_weights,pruned_weights,amount,new_zero_weights
-9,SPPF,cv1.conv,32768,13107,0.4,13107
-9,SPPF,cv2.conv,131072,52429,0.4,52429

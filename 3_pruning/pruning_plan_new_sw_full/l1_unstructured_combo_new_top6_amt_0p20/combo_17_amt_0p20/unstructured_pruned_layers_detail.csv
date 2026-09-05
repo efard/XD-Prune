@@ -1,2 +1,0 @@
-layer_id,layer_type,conv_name,total_weights,pruned_weights,amount,new_zero_weights
-17,Conv,conv,36864,7373,0.2,7373

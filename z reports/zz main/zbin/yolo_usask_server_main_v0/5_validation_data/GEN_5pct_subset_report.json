@@ -1,9 +1,0 @@
-{
-  "source_total_val_images": 11000,
-  "subset_count": 550,
-  "fraction_percent": 5.0,
-  "seed": 42,
-  "missing_label_files_backgrounds": 0,
-  "subset_yaml": "/project/ko/afm176/datasets/1_data/reproduction_exact_v1/GEN_MIO_TCD_exact_val5pct_seed42/dataset_GEN_val5pct_seed42.yaml",
-  "manifest": "/project/ko/afm176/datasets/1_data/reproduction_exact_v1/GEN_MIO_TCD_exact_val5pct_seed42/GEN_val_5pct_seed42_manifest.txt"
-}

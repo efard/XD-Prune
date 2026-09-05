@@ -1,8 +1,0 @@
-layer_id,layer_type,conv_name,out_channels,pruned_output_channels,amount,new_zero_weights
-10,C2PSA,cv1.conv,256,77,0.3,19712
-10,C2PSA,cv2.conv,256,77,0.3,19712
-10,C2PSA,m.0.attn.qkv.conv,256,77,0.3,9856
-10,C2PSA,m.0.attn.proj.conv,128,38,0.3,4864
-10,C2PSA,m.0.attn.pe.conv,128,38,0.3,342
-10,C2PSA,m.0.ffn.0.conv,256,77,0.3,9856
-10,C2PSA,m.0.ffn.1.conv,128,38,0.3,9728

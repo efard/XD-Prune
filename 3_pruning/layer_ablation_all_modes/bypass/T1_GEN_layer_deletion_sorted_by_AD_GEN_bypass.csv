@@ -1,5 +1,0 @@
-layer_id,layer_type,layer_params,params_percent,gen_baseline_map50_95,gen_deleted_map50_95,ad_gen_map50_95,mode,adapter_details
-9,SPPF,164608,6.563082,0.506632,0.436350,0.070282,bypass,strict_identity_no_shape_adapter
-8,C3k2,346112,13.799824,0.506632,0.146583,0.360050,bypass,strict_identity_no_shape_adapter
-10,C2PSA,249728,9.956899,0.506632,0.030004,0.476628,bypass,strict_identity_no_shape_adapter
-6,C3k2,87040,3.470370,0.506632,0.000441,0.506191,bypass,strict_identity_no_shape_adapter

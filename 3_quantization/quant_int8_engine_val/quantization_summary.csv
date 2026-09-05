@@ -1,3 +1,0 @@
-method,model_path,format,split,size_mb,map50_95,map50,drop_map50_95,drop_map50,preprocess_ms,inference_ms,postprocess_ms,latency_ms,fps
-FP32 baseline,/home/afm176/yolo_project/runs/baseline/baseline_yolo26n_mio_11000_e100_img640_b16_s42_20260701_001856/weights/best.pt,pt,val,5.137639,0.506632,0.690055,0.000000,0.000000,0.260786,0.985253,0.047380,1.293419,773.144758
-INT8 PTQ,3_quantization/results/quant_int8_engine_val_20260701_180341/best.engine,engine,val,8.563261,0.456102,0.649664,0.050531,0.040392,0.332634,0.288882,0.044859,0.666375,1500.655913

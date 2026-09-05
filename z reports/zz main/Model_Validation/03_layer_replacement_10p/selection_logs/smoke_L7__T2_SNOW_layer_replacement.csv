@@ -1,2 +1,0 @@
-layer_id,layer_type,snow_layer_params,snow_params_reduced,snow_params_reduction_percent,snow_baseline_map50_95,snow_replaced_map50_95,ad_snow_map50_95,snow_replaced_map50,snow_replaced_map75,snow_model_path
-7,Conv,295424,295424,11.78434094426627,0.1899135424242684,0.019253328181293525,0.17066021424297487,0.028304949130029476,0.02189068091421241,5_reproduction/stage2_results/smoke_L7/saved_replaced_models/SNOW_replace_L7_Conv.pt

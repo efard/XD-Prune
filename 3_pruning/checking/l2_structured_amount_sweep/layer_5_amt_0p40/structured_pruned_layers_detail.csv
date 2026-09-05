@@ -1,2 +1,0 @@
-layer_id,layer_type,conv_name,out_channels,pruned_output_channels,amount,new_zero_weights
-5,Conv,conv,128,51,0.4,58752

@@ -1,8 +1,0 @@
-experiment,domain,validation_set,image_count,seed,same_images_across_models
-Global L1 ~10.25% PT,GEN,GEN full fixed val,11000,fixed split,YES
-Global L1 ~10.25% PT,SNOW,SNOW full fixed val,100,fixed split,YES
-Global L1 ~56.5% PT,GEN,GEN full fixed val,11000,fixed split,YES
-Layer Replacement ~10% PT,GEN/SNOW,corresponding full fixed val,GEN=11000;SNOW=100,fixed split,YES within domain
-Layer Replacement ~56.5% PT,GEN,GEN full fixed val,11000,fixed split,YES
-NCNN accuracy screening,GEN,fixed 5% GEN val subset,550,42,YES
-NCNN accuracy screening,SNOW,SNOW full fixed val,100,not sampled,YES
