@@ -1,0 +1,72 @@
+{
+  "builder": "Pruning_Study/scripts/build_bdd_updated_t3_t4.py",
+  "builder_sha256": "B70E194ADD9515CDC87E5C8ABA91B39705FCD6857DDC19FA7016DD8A93E6D74D",
+  "formula_id": "BDD_UPDATED_GEN_PROTECTED_V1",
+  "ratios": [
+    {
+      "T3": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/12_5pct/tables/T3_UPDATED_GEN_PROTECTED_12_5PCT.csv",
+      "T3_sha256": "1F1D3175B51CBF932EAF21ADF766FAC41839DCB7D551A8DE746EF833F5007307",
+      "T4": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/12_5pct/tables/T4_UPDATED_PRUNABILITY_12_5PCT.csv",
+      "T4_sha256": "9F1630393E15BC2F4B73E2F729A1C32E8ABDD55C4395F2D202B2DB41CC117271",
+      "all_numeric_values_finite": true,
+      "ratio_percent": 12.5,
+      "rows": 51,
+      "sequence": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/12_5pct/tables/PRUNING_SEQUENCE_UPDATED_12_5PCT.csv",
+      "sequence_sha256": "D43FDF15A1D2FA0C5584A931850E43ADB055769653A3BD9CD96F7A3903116AD2",
+      "source": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/12_5pct/tables/PAIRED_GEN2_NGN2_12_5PCT.csv",
+      "source_sha256": "F404063534C42A35EF7B88B3B50DECE204406F48A6465C75D8D0FCF5059EC42C",
+      "top_five": [
+        "DG026",
+        "DG004",
+        "DG025",
+        "DG038",
+        "CDG005"
+      ],
+      "unique_groups": 51
+    },
+    {
+      "T3": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/25pct/tables/T3_UPDATED_GEN_PROTECTED_25PCT.csv",
+      "T3_sha256": "F34214CFE29A48E9777CAD19364B2E4B6BF1C2B15DF6AE74C4824FECAFA0BCA9",
+      "T4": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/25pct/tables/T4_UPDATED_PRUNABILITY_25PCT.csv",
+      "T4_sha256": "787196B0572708BAEA7FA7D32C1AED6CFB4F2505066F2B20849E77EC532CD4A1",
+      "all_numeric_values_finite": true,
+      "ratio_percent": 25.0,
+      "rows": 51,
+      "sequence": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/25pct/tables/PRUNING_SEQUENCE_UPDATED_25PCT.csv",
+      "sequence_sha256": "C3FED78D6B0DE2BB5BCF762B95E36956AD745255F6878781A7BC00E03CCE5995",
+      "source": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/25pct/tables/PAIRED_GEN2_NGN2_25PCT.csv",
+      "source_sha256": "13DEC78873851290B35A091BCE8355DE8EFE86D065C2B6814A09FCBEE0794C5B",
+      "top_five": [
+        "DG026",
+        "DG025",
+        "DG004",
+        "DG040",
+        "DG034"
+      ],
+      "unique_groups": 51
+    },
+    {
+      "T3": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/37_5pct/tables/T3_UPDATED_GEN_PROTECTED_37_5PCT.csv",
+      "T3_sha256": "4FCB9BF4494951544DB24E83F048E5037CBFAA2DFFBAB8CE060E63196BA615FB",
+      "T4": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/37_5pct/tables/T4_UPDATED_PRUNABILITY_37_5PCT.csv",
+      "T4_sha256": "5AB69087F1083E09C4BEC02C58AB9786881AAB3957A5B54177A839624C678F38",
+      "all_numeric_values_finite": true,
+      "ratio_percent": 37.5,
+      "rows": 51,
+      "sequence": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t3_t4_updated_v1/37_5pct/tables/PRUNING_SEQUENCE_UPDATED_37_5PCT.csv",
+      "sequence_sha256": "FDD96FEB0C39708C38FE01DD2219A59A02AB49260C27C43322AEBEC711BA3BD0",
+      "source": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/37_5pct/tables/PAIRED_GEN2_NGN2_37_5PCT.csv",
+      "source_sha256": "8A92E131110CC554828EA10F40795F265674467828416AD7D4D7B23445975080",
+      "top_five": [
+        "DG026",
+        "DG025",
+        "DG040",
+        "DG039",
+        "CDG009"
+      ],
+      "unique_groups": 51
+    }
+  ],
+  "schema": "bdd_updated_t3_t4_audit_v1",
+  "status": "PASS"
+}

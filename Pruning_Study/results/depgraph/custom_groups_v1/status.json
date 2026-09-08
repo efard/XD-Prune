@@ -1,0 +1,15 @@
+{
+  "accuracy_evaluation_performed": false,
+  "canonical_custom_groups": 9,
+  "catalogue_sha256": "169ac253db275d926ac6ec7c47d4f245ba265096d5f396ad867eed7a89c44acb",
+  "deferred_root_entries_accounted_for": 19,
+  "failed": 0,
+  "operations_sha256": "39b5b37c88a7d4cd4ba74c7e4dbaab6f44d9cbf33238d6f47aa92965f1f6a3fe",
+  "passed": 18,
+  "physically_validated_custom_groups_gen": 9,
+  "physically_validated_custom_groups_snow": 9,
+  "runs": 18,
+  "schema_version": "YOLO26N_CUSTOM_GROUP_PHYSICAL_V1",
+  "sealed_generic_catalogue_modified": false,
+  "status_markdown_sha256": "438ff0230897ff1922da1a4b199d9166ed4cb1a48bd76d4fe82de83fbb4a5ca1"
+}

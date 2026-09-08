@@ -1,0 +1,29 @@
+{
+  "accuracy_evaluation_performed": false,
+  "catalogue_id": "YOLO26N_DEPGRAPH_CATALOGUE_V1",
+  "conv2d_roots_per_model": 126,
+  "custom_overlapping_operation_components": 10,
+  "custom_rule_root_entries": 19,
+  "depgraph_candidate_root_entries": 72,
+  "duplicate_validated_alias_entries": 11,
+  "frozen_local_date": "2026-07-19",
+  "initial_t1_t2_groups": 42,
+  "outputs_sha256": {
+    "Pruning_Study/results/depgraph/week1_safe_v3/SUPERVISOR_GROUP_CATALOGUE.md": "5AF9D0A75D500EECF8A7D3A4D4A0FE6A30FA69CDD28A029ADC877D8F8E242DA2",
+    "Pruning_Study/results/depgraph/week1_safe_v3/canonical_group_operations.json": "DF40242AF52C29E24898E07641EFB27E639294084BCAE416CBF259FCCBD6AB06",
+    "Pruning_Study/results/depgraph/week1_safe_v3/canonical_validated_groups.csv": "24398DA08FA96FB9B74038B51A63EE49D24ED94B45A651D7873855719204DD06",
+    "Pruning_Study/results/depgraph/week1_safe_v3/full_root_crosswalk.csv": "655602DD4349971E932B64DE537CDEE9A3A222BD55ACB6148EC6FF01A8200629"
+  },
+  "physically_validated_root_entries": 53,
+  "protected_root_entries": 54,
+  "source_sha256": {
+    "Pruning_Study/results/depgraph/week1_safe_v3/gen/groups_streamed.jsonl": "FBC1683D2884959AA52BF0F4F975285EE63B74EB5E4472F2BE1BC1E338CACE60",
+    "Pruning_Study/results/depgraph/week1_safe_v3/gen/module_inventory.csv": "025E74D50FACBC4A3FFED2104EC6F73E59916D9AB0585751653FE9FB6DBE10B5",
+    "Pruning_Study/results/depgraph/week1_safe_v3/protected_root_manifest.csv": "41A8D5F9EBE064D588E010E2206ACD68564C498D576A8299739D99CF379B689A",
+    "Pruning_Study/results/depgraph/week1_safe_v3/snow/groups_streamed.jsonl": "6364F77D9BABB0F1E828D34C364E37D053ECC5ACF980ABD19766B19DB8F48BE8",
+    "Pruning_Study/results/depgraph/week1_safe_v3/snow/module_inventory.csv": "0F623BD8C04D656ED81094470B320D98C7C10BEC5854B747EF5E60BAB604F865",
+    "Pruning_Study/results/depgraph/week1_safe_v3/validated_group_manifest.csv": "8FEF1B184FA8381A9586A883254641142600D4D0D7D0FDCDDEC6715C85925C2D"
+  },
+  "status": "COMPLETE_FOR_GENERIC_T1_T2_SWEEP",
+  "unique_validated_physical_groups": 42
+}

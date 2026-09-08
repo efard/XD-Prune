@@ -1,0 +1,22 @@
+{
+  "checkpoints": {
+    "GEN": {
+      "bytes": 5385470,
+      "path": "Pruning_Study\\results\\baselines\\b_gen_mio_yolo26n_s42_v1\\weights\\best.pt",
+      "sha256": "d0250e9ffd459c2c46a01ac81421d95e9e1d0bb35799b5dede30c92e7b94d250"
+    },
+    "SNOW": {
+      "bytes": 5374078,
+      "path": "Pruning_Study\\results\\baselines\\b_snow_acdc_yolo26n_s42_v1\\weights\\best.pt",
+      "sha256": "5c9bceba2872e98ee1beb967e10e4ca10e17bea6a8f8200e306bcdae067bdb68"
+    }
+  },
+  "created_unix": 1784470957.050698,
+  "physical_memory_bytes": 34053414912,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "psutil": "7.1.0",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "torch": "2.4.1+cu121",
+  "torch_pruning": "1.6.1",
+  "ultralytics": "8.4.21"
+}

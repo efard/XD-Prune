@@ -1,0 +1,73 @@
+{
+  "freeze_id": "BDD_T1_T2_EXPERIMENT_FREEZE_V1",
+  "status": "FROZEN",
+  "frozen_local_date": "2026-08-23",
+  "scope": "Immediate post-pruning T1/T2 sweep of the previously validated 51 YOLO26n dependency-safe groups on independently trained BDD100K GEN-2 clear and NGN-2 adverse baselines.",
+  "experimental_unit": "one dependency-safe physical/logical group in one fresh domain checkpoint at one exact local pruning fraction",
+  "domains": {
+    "GEN2": {
+      "role": "T1",
+      "checkpoint": "Pruning_Study/results/baselines/b_gen2_bdd_clear_alltime_yolo26n_s42_v1/weights/best.pt",
+      "checkpoint_sha256": "863520B6AC857D934EFE910035EF3FBFC3DCF927E9D9EAC29407AE1BCE42D4EA",
+      "dataset_yaml": "Pruning_Study/data_views/bdd100k_clear_adverse_alltime/bdd_gen/dataset.yaml",
+      "dataset_yaml_sha256": "65FB9CCA8E741E9CE7EFEF6C27839E2D86A454BB3204DD897F7E806E04B4D1A2",
+      "baseline_evidence": "Pruning_Study/results/baselines/b_gen2_bdd_clear_alltime_yolo26n_s42_v1/bdd_baseline_run_summary.json",
+      "baseline_evidence_sha256": "AAB1B2CF88713A46D6575E38A9536E94C59E3FA04E1B2FB03ABE99555CEB009C",
+      "frozen_map50_95": 0.29238744923632365,
+      "validation_images": 5299,
+      "validation_instances": 61603
+    },
+    "NGN2": {
+      "role": "T2",
+      "checkpoint": "Pruning_Study/results/baselines/b_ngn2_bdd_adverse_alltime_yolo26n_s42_v1/weights/best.pt",
+      "checkpoint_sha256": "6C5F7580651AFD48862E598F649BAF6D4D7CF23CEEADC5C42B105546AF72C27D",
+      "dataset_yaml": "Pruning_Study/data_views/bdd100k_clear_adverse_alltime/bdd_ngn/dataset.yaml",
+      "dataset_yaml_sha256": "65FB9CCA8E741E9CE7EFEF6C27839E2D86A454BB3204DD897F7E806E04B4D1A2",
+      "baseline_evidence": "Pruning_Study/results/baselines/b_ngn2_bdd_adverse_alltime_yolo26n_s42_v1/bdd_baseline_run_summary.json",
+      "baseline_evidence_sha256": "F1428DDF529BA38679C356CE4927B63D509DAC1DCA1027306278C93F6B60A29A",
+      "frozen_map50_95": 0.2556081270327769,
+      "validation_images": 1504,
+      "validation_instances": 17733
+    }
+  },
+  "groups": {
+    "total": 51,
+    "generic_depgraph": 42,
+    "custom_block_aware": 9,
+    "generic_freeze": "Pruning_Study/configs/pruning/T1_T2_FULL_SWEEP_FREEZE_V2.json",
+    "custom_freeze": "Pruning_Study/configs/pruning/T1_T2_CUSTOM_SWEEP_FREEZE_V1.json",
+    "generic_catalogue": "Pruning_Study/results/depgraph/week1_safe_v3/canonical_validated_groups.csv",
+    "generic_operations": "Pruning_Study/results/depgraph/week1_safe_v3/canonical_group_operations.json",
+    "custom_catalogue": "Pruning_Study/results/depgraph/custom_groups_v1/CUSTOM_GROUP_CATALOGUE.csv",
+    "custom_operations": "Pruning_Study/results/depgraph/custom_groups_v1/CUSTOM_GROUP_OPERATIONS.json"
+  },
+  "ratios": [0.125, 0.25, 0.375],
+  "intervention": {
+    "generic": "live DepGraph output-channel pruning with GroupMagnitudeImportance(p=1, group_reduction='mean', normalizer='mean', bias=False)",
+    "custom": "existing validated C3k2/C2PSA block-aware logical-width rule with mean-normalized coupled-slice L1 importance and equal per-head attention-unit removal",
+    "channel_selection": "independently selected from each checkpoint using the same frozen group-aware rule",
+    "fresh_checkpoint_per_run": true,
+    "isolated_group": true,
+    "fine_tuning": false,
+    "batchnorm_update": false,
+    "cumulative_pruning": false
+  },
+  "evaluation": {
+    "config": "Pruning_Study/configs/pruning/t1_t2_eval_v1.yaml",
+    "primary_metric": "validation mAP50-95",
+    "signed_accuracy_drop": "AD_d,i,r = M_d,0 - M_d,i,r",
+    "normalized_signed_drop": "NAD_d,i,r = AD_d,i,r / M_d,0",
+    "test_split_accessed": false,
+    "prediction_export": "not retained in the exhaustive screening sweep; selected apparent improvements/near-zero effects are re-evaluated with prediction export for paired bootstrap analysis"
+  },
+  "frozen_input_hashes": {
+    "Pruning_Study/configs/pruning/t1_t2_eval_v1.yaml": "A289C8A8C24C0FD82767E27305593A2EC05E524E30B256061C4D698FE43DBDC1",
+    "Pruning_Study/configs/pruning/T1_T2_FULL_SWEEP_FREEZE_V2.json": "A37F6E41683E584CDB2B9EACCC004A33442685F7F1BC64CBAD82A326AB6F03AA",
+    "Pruning_Study/configs/pruning/T1_T2_CUSTOM_SWEEP_FREEZE_V1.json": "66C220C8057DCAD23D6120A1A4D80E291E60829FEC44AFFA8ADE7170960751C8",
+    "Pruning_Study/results/depgraph/week1_safe_v3/canonical_validated_groups.csv": "24398DA08FA96FB9B74038B51A63EE49D24ED94B45A651D7873855719204DD06",
+    "Pruning_Study/results/depgraph/week1_safe_v3/canonical_group_operations.json": "DF40242AF52C29E24898E07641EFB27E639294084BCAE416CBF259FCCBD6AB06",
+    "Pruning_Study/results/depgraph/custom_groups_v1/CUSTOM_GROUP_CATALOGUE.csv": "169AC253DB275D926AC6EC7C47D4F245BA265096D5F396AD867EED7A89C44ACB",
+    "Pruning_Study/results/depgraph/custom_groups_v1/CUSTOM_GROUP_OPERATIONS.json": "39B5B37C88A7D4CD4BA74C7E4DBAAB6F44D9CBF33238D6F47AA92965F1F6A3FE"
+  },
+  "change_control": "Any change to baseline checkpoint, validation split, group membership, pruning fraction, importance rule, evaluator, fine-tuning policy, BatchNorm policy, or output validation requires a new versioned freeze. T3/T4 formula selection is deliberately outside this freeze."
+}

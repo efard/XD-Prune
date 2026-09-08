@@ -1,0 +1,5100 @@
+{
+  "CDG001": {
+    "block_path": "model.2",
+    "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 14,
+      "hidden_channels_before": 16,
+      "hidden_channels_removed": 2,
+      "logical_indices": [
+        7,
+        8
+      ],
+      "operations": [
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            7,
+            8,
+            23,
+            24
+          ],
+          "module_path": "model.2.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            7,
+            8,
+            23,
+            24
+          ],
+          "module_path": "model.2.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 42,
+          "channels_before": 48,
+          "indices": [
+            7,
+            8,
+            23,
+            24,
+            39,
+            40
+          ],
+          "module_path": "model.2.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 14,
+          "channels_before": 16,
+          "indices": [
+            7,
+            8
+          ],
+          "module_path": "model.2.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 14,
+          "channels_before": 16,
+          "indices": [
+            7,
+            8
+          ],
+          "module_path": "model.2.m.0.cv2.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 14,
+          "channels_before": 16,
+          "indices": [
+            7,
+            8
+          ],
+          "module_path": "model.2.m.0.cv2.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "gen_selected_indices": [
+      7,
+      8
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.2.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.2.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 42,
+        "channels_before": 48,
+        "indices_removed": 6,
+        "module_path": "model.2.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 14,
+        "channels_before": 16,
+        "indices_removed": 2,
+        "module_path": "model.2.m.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 14,
+        "channels_before": 16,
+        "indices_removed": 2,
+        "module_path": "model.2.m.0.cv2.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 14,
+        "channels_before": 16,
+        "indices_removed": 2,
+        "module_path": "model.2.m.0.cv2.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "F1DDD2D4394A15D592504F63C42494C535F11658B4044F59BDD9EF7AF5ABDB3B",
+    "snow_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 14,
+      "hidden_channels_before": 16,
+      "hidden_channels_removed": 2,
+      "logical_indices": [
+        8,
+        9
+      ],
+      "operations": [
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            8,
+            9,
+            24,
+            25
+          ],
+          "module_path": "model.2.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            8,
+            9,
+            24,
+            25
+          ],
+          "module_path": "model.2.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 42,
+          "channels_before": 48,
+          "indices": [
+            8,
+            9,
+            24,
+            25,
+            40,
+            41
+          ],
+          "module_path": "model.2.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 14,
+          "channels_before": 16,
+          "indices": [
+            8,
+            9
+          ],
+          "module_path": "model.2.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 14,
+          "channels_before": 16,
+          "indices": [
+            8,
+            9
+          ],
+          "module_path": "model.2.m.0.cv2.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 14,
+          "channels_before": 16,
+          "indices": [
+            8,
+            9
+          ],
+          "module_path": "model.2.m.0.cv2.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "snow_selected_indices": [
+      8,
+      9
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.2.cv1.conv",
+        "original_depgraph_id": "G035",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.2.m.0.cv2.conv",
+        "original_depgraph_id": "G038",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  },
+  "CDG002": {
+    "block_path": "model.4",
+    "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 28,
+      "hidden_channels_before": 32,
+      "hidden_channels_removed": 4,
+      "logical_indices": [
+        6,
+        8,
+        21,
+        25
+      ],
+      "operations": [
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            8,
+            21,
+            25,
+            38,
+            40,
+            53,
+            57
+          ],
+          "module_path": "model.4.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            8,
+            21,
+            25,
+            38,
+            40,
+            53,
+            57
+          ],
+          "module_path": "model.4.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 84,
+          "channels_before": 96,
+          "indices": [
+            6,
+            8,
+            21,
+            25,
+            38,
+            40,
+            53,
+            57,
+            70,
+            72,
+            85,
+            89
+          ],
+          "module_path": "model.4.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            6,
+            8,
+            21,
+            25
+          ],
+          "module_path": "model.4.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            6,
+            8,
+            21,
+            25
+          ],
+          "module_path": "model.4.m.0.cv2.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            6,
+            8,
+            21,
+            25
+          ],
+          "module_path": "model.4.m.0.cv2.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "gen_selected_indices": [
+      6,
+      8,
+      21,
+      25
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.4.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.4.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 84,
+        "channels_before": 96,
+        "indices_removed": 12,
+        "module_path": "model.4.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.4.m.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.4.m.0.cv2.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.4.m.0.cv2.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "C5A90BF08AEBD7CE64BCB73497611CA55B0B7C363DA8CD6004085509994B21B8",
+    "snow_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 28,
+      "hidden_channels_before": 32,
+      "hidden_channels_removed": 4,
+      "logical_indices": [
+        0,
+        6,
+        13,
+        25
+      ],
+      "operations": [
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            0,
+            6,
+            13,
+            25,
+            32,
+            38,
+            45,
+            57
+          ],
+          "module_path": "model.4.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            0,
+            6,
+            13,
+            25,
+            32,
+            38,
+            45,
+            57
+          ],
+          "module_path": "model.4.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 84,
+          "channels_before": 96,
+          "indices": [
+            0,
+            6,
+            13,
+            25,
+            32,
+            38,
+            45,
+            57,
+            64,
+            70,
+            77,
+            89
+          ],
+          "module_path": "model.4.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            0,
+            6,
+            13,
+            25
+          ],
+          "module_path": "model.4.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            0,
+            6,
+            13,
+            25
+          ],
+          "module_path": "model.4.m.0.cv2.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            0,
+            6,
+            13,
+            25
+          ],
+          "module_path": "model.4.m.0.cv2.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "snow_selected_indices": [
+      0,
+      6,
+      13,
+      25
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.4.cv1.conv",
+        "original_depgraph_id": "G047",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.4.m.0.cv2.conv",
+        "original_depgraph_id": "G050",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  },
+  "CDG003": {
+    "block_path": "model.6",
+    "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 56,
+      "hidden_channels_before": 64,
+      "hidden_channels_removed": 8,
+      "logical_indices": [
+        2,
+        10,
+        12,
+        14,
+        18,
+        24,
+        35,
+        36
+      ],
+      "operations": [
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            2,
+            10,
+            12,
+            14,
+            18,
+            24,
+            35,
+            36,
+            66,
+            74,
+            76,
+            78,
+            82,
+            88,
+            99,
+            100
+          ],
+          "module_path": "model.6.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            2,
+            10,
+            12,
+            14,
+            18,
+            24,
+            35,
+            36,
+            66,
+            74,
+            76,
+            78,
+            82,
+            88,
+            99,
+            100
+          ],
+          "module_path": "model.6.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 168,
+          "channels_before": 192,
+          "indices": [
+            2,
+            10,
+            12,
+            14,
+            18,
+            24,
+            35,
+            36,
+            66,
+            74,
+            76,
+            78,
+            82,
+            88,
+            99,
+            100,
+            130,
+            138,
+            140,
+            142,
+            146,
+            152,
+            163,
+            164
+          ],
+          "module_path": "model.6.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            10,
+            12,
+            14,
+            18,
+            24,
+            35,
+            36
+          ],
+          "module_path": "model.6.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            10,
+            12,
+            14,
+            18,
+            24,
+            35,
+            36
+          ],
+          "module_path": "model.6.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            10,
+            12,
+            14,
+            18,
+            24,
+            35,
+            36
+          ],
+          "module_path": "model.6.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            10,
+            12,
+            14,
+            18,
+            24,
+            35,
+            36
+          ],
+          "module_path": "model.6.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "gen_selected_indices": [
+      2,
+      10,
+      12,
+      14,
+      18,
+      24,
+      35,
+      36
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.6.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.6.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 168,
+        "channels_before": 192,
+        "indices_removed": 24,
+        "module_path": "model.6.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.6.m.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.6.m.0.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.6.m.0.cv3.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.6.m.0.cv3.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "9A12A81603147432DA60537658E4CCDABA5DE0EAEF764DCC31F10201C6101360",
+    "snow_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 56,
+      "hidden_channels_before": 64,
+      "hidden_channels_removed": 8,
+      "logical_indices": [
+        2,
+        5,
+        7,
+        8,
+        14,
+        18,
+        50,
+        60
+      ],
+      "operations": [
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            2,
+            5,
+            7,
+            8,
+            14,
+            18,
+            50,
+            60,
+            66,
+            69,
+            71,
+            72,
+            78,
+            82,
+            114,
+            124
+          ],
+          "module_path": "model.6.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            2,
+            5,
+            7,
+            8,
+            14,
+            18,
+            50,
+            60,
+            66,
+            69,
+            71,
+            72,
+            78,
+            82,
+            114,
+            124
+          ],
+          "module_path": "model.6.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 168,
+          "channels_before": 192,
+          "indices": [
+            2,
+            5,
+            7,
+            8,
+            14,
+            18,
+            50,
+            60,
+            66,
+            69,
+            71,
+            72,
+            78,
+            82,
+            114,
+            124,
+            130,
+            133,
+            135,
+            136,
+            142,
+            146,
+            178,
+            188
+          ],
+          "module_path": "model.6.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            5,
+            7,
+            8,
+            14,
+            18,
+            50,
+            60
+          ],
+          "module_path": "model.6.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            5,
+            7,
+            8,
+            14,
+            18,
+            50,
+            60
+          ],
+          "module_path": "model.6.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            5,
+            7,
+            8,
+            14,
+            18,
+            50,
+            60
+          ],
+          "module_path": "model.6.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            2,
+            5,
+            7,
+            8,
+            14,
+            18,
+            50,
+            60
+          ],
+          "module_path": "model.6.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "snow_selected_indices": [
+      2,
+      5,
+      7,
+      8,
+      14,
+      18,
+      50,
+      60
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.6.cv1.conv",
+        "original_depgraph_id": "G052",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.6.m.0.cv3.conv",
+        "original_depgraph_id": "G056",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  },
+  "CDG004": {
+    "block_path": "model.8",
+    "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 112,
+      "hidden_channels_before": 128,
+      "hidden_channels_removed": 16,
+      "logical_indices": [
+        5,
+        13,
+        15,
+        29,
+        44,
+        58,
+        60,
+        84,
+        86,
+        97,
+        102,
+        117,
+        118,
+        119,
+        121,
+        124
+      ],
+      "operations": [
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            5,
+            13,
+            15,
+            29,
+            44,
+            58,
+            60,
+            84,
+            86,
+            97,
+            102,
+            117,
+            118,
+            119,
+            121,
+            124,
+            133,
+            141,
+            143,
+            157,
+            172,
+            186,
+            188,
+            212,
+            214,
+            225,
+            230,
+            245,
+            246,
+            247,
+            249,
+            252
+          ],
+          "module_path": "model.8.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            5,
+            13,
+            15,
+            29,
+            44,
+            58,
+            60,
+            84,
+            86,
+            97,
+            102,
+            117,
+            118,
+            119,
+            121,
+            124,
+            133,
+            141,
+            143,
+            157,
+            172,
+            186,
+            188,
+            212,
+            214,
+            225,
+            230,
+            245,
+            246,
+            247,
+            249,
+            252
+          ],
+          "module_path": "model.8.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 336,
+          "channels_before": 384,
+          "indices": [
+            5,
+            13,
+            15,
+            29,
+            44,
+            58,
+            60,
+            84,
+            86,
+            97,
+            102,
+            117,
+            118,
+            119,
+            121,
+            124,
+            133,
+            141,
+            143,
+            157,
+            172,
+            186,
+            188,
+            212,
+            214,
+            225,
+            230,
+            245,
+            246,
+            247,
+            249,
+            252,
+            261,
+            269,
+            271,
+            285,
+            300,
+            314,
+            316,
+            340,
+            342,
+            353,
+            358,
+            373,
+            374,
+            375,
+            377,
+            380
+          ],
+          "module_path": "model.8.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            13,
+            15,
+            29,
+            44,
+            58,
+            60,
+            84,
+            86,
+            97,
+            102,
+            117,
+            118,
+            119,
+            121,
+            124
+          ],
+          "module_path": "model.8.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            13,
+            15,
+            29,
+            44,
+            58,
+            60,
+            84,
+            86,
+            97,
+            102,
+            117,
+            118,
+            119,
+            121,
+            124
+          ],
+          "module_path": "model.8.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            13,
+            15,
+            29,
+            44,
+            58,
+            60,
+            84,
+            86,
+            97,
+            102,
+            117,
+            118,
+            119,
+            121,
+            124
+          ],
+          "module_path": "model.8.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            13,
+            15,
+            29,
+            44,
+            58,
+            60,
+            84,
+            86,
+            97,
+            102,
+            117,
+            118,
+            119,
+            121,
+            124
+          ],
+          "module_path": "model.8.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "gen_selected_indices": [
+      5,
+      13,
+      15,
+      29,
+      44,
+      58,
+      60,
+      84,
+      86,
+      97,
+      102,
+      117,
+      118,
+      119,
+      121,
+      124
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.8.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.8.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 336,
+        "channels_before": 384,
+        "indices_removed": 48,
+        "module_path": "model.8.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.8.m.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.8.m.0.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.8.m.0.cv3.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.8.m.0.cv3.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "2601A6C29EE41200E1999915A2D1AEC607D17CD2C1E8C85A5DEB457522A2DD09",
+    "snow_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 112,
+      "hidden_channels_before": 128,
+      "hidden_channels_removed": 16,
+      "logical_indices": [
+        5,
+        29,
+        33,
+        54,
+        57,
+        60,
+        79,
+        84,
+        98,
+        102,
+        106,
+        115,
+        117,
+        118,
+        119,
+        121
+      ],
+      "operations": [
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            5,
+            29,
+            33,
+            54,
+            57,
+            60,
+            79,
+            84,
+            98,
+            102,
+            106,
+            115,
+            117,
+            118,
+            119,
+            121,
+            133,
+            157,
+            161,
+            182,
+            185,
+            188,
+            207,
+            212,
+            226,
+            230,
+            234,
+            243,
+            245,
+            246,
+            247,
+            249
+          ],
+          "module_path": "model.8.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            5,
+            29,
+            33,
+            54,
+            57,
+            60,
+            79,
+            84,
+            98,
+            102,
+            106,
+            115,
+            117,
+            118,
+            119,
+            121,
+            133,
+            157,
+            161,
+            182,
+            185,
+            188,
+            207,
+            212,
+            226,
+            230,
+            234,
+            243,
+            245,
+            246,
+            247,
+            249
+          ],
+          "module_path": "model.8.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 336,
+          "channels_before": 384,
+          "indices": [
+            5,
+            29,
+            33,
+            54,
+            57,
+            60,
+            79,
+            84,
+            98,
+            102,
+            106,
+            115,
+            117,
+            118,
+            119,
+            121,
+            133,
+            157,
+            161,
+            182,
+            185,
+            188,
+            207,
+            212,
+            226,
+            230,
+            234,
+            243,
+            245,
+            246,
+            247,
+            249,
+            261,
+            285,
+            289,
+            310,
+            313,
+            316,
+            335,
+            340,
+            354,
+            358,
+            362,
+            371,
+            373,
+            374,
+            375,
+            377
+          ],
+          "module_path": "model.8.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            29,
+            33,
+            54,
+            57,
+            60,
+            79,
+            84,
+            98,
+            102,
+            106,
+            115,
+            117,
+            118,
+            119,
+            121
+          ],
+          "module_path": "model.8.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            29,
+            33,
+            54,
+            57,
+            60,
+            79,
+            84,
+            98,
+            102,
+            106,
+            115,
+            117,
+            118,
+            119,
+            121
+          ],
+          "module_path": "model.8.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            29,
+            33,
+            54,
+            57,
+            60,
+            79,
+            84,
+            98,
+            102,
+            106,
+            115,
+            117,
+            118,
+            119,
+            121
+          ],
+          "module_path": "model.8.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            5,
+            29,
+            33,
+            54,
+            57,
+            60,
+            79,
+            84,
+            98,
+            102,
+            106,
+            115,
+            117,
+            118,
+            119,
+            121
+          ],
+          "module_path": "model.8.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "snow_selected_indices": [
+      5,
+      29,
+      33,
+      54,
+      57,
+      60,
+      79,
+      84,
+      98,
+      102,
+      106,
+      115,
+      117,
+      118,
+      119,
+      121
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.8.cv1.conv",
+        "original_depgraph_id": "G062",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.8.m.0.cv3.conv",
+        "original_depgraph_id": "G066",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  },
+  "CDG005": {
+    "block_path": "model.10",
+    "family": "C2PSA_HEAD_AWARE_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "attention_units_before": 64,
+      "attention_units_removed": 8,
+      "embedding_indices": [
+        10,
+        19,
+        30,
+        31,
+        42,
+        51,
+        62,
+        63,
+        64,
+        71,
+        72,
+        89,
+        96,
+        103,
+        104,
+        121
+      ],
+      "family": "C2PSA_HEAD_AWARE_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 112,
+      "hidden_channels_before": 128,
+      "hidden_channels_removed": 16,
+      "operations": [
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121,
+            138,
+            147,
+            158,
+            159,
+            170,
+            179,
+            190,
+            191,
+            192,
+            199,
+            200,
+            217,
+            224,
+            231,
+            232,
+            249
+          ],
+          "module_path": "model.10.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121,
+            138,
+            147,
+            158,
+            159,
+            170,
+            179,
+            190,
+            191,
+            192,
+            199,
+            200,
+            217,
+            224,
+            231,
+            232,
+            249
+          ],
+          "module_path": "model.10.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121,
+            138,
+            147,
+            158,
+            159,
+            170,
+            179,
+            190,
+            191,
+            192,
+            199,
+            200,
+            217,
+            224,
+            231,
+            232,
+            249
+          ],
+          "module_path": "model.10.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.attn.qkv.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            74,
+            83,
+            94,
+            95,
+            106,
+            115,
+            126,
+            127,
+            128,
+            135,
+            136,
+            153,
+            160,
+            167,
+            168,
+            185,
+            192,
+            199,
+            200,
+            217,
+            224,
+            231,
+            232,
+            249
+          ],
+          "module_path": "model.10.m.0.attn.qkv.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            74,
+            83,
+            94,
+            95,
+            106,
+            115,
+            126,
+            127,
+            128,
+            135,
+            136,
+            153,
+            160,
+            167,
+            168,
+            185,
+            192,
+            199,
+            200,
+            217,
+            224,
+            231,
+            232,
+            249
+          ],
+          "module_path": "model.10.m.0.attn.qkv.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.attn.proj.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.attn.proj.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.attn.proj.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.attn.pe.conv",
+          "operation": "prune_depthwise_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.attn.pe.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.ffn.0.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.ffn.1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            19,
+            30,
+            31,
+            42,
+            51,
+            62,
+            63,
+            64,
+            71,
+            72,
+            89,
+            96,
+            103,
+            104,
+            121
+          ],
+          "module_path": "model.10.m.0.ffn.1.bn",
+          "operation": "prune_out_channels"
+        }
+      ],
+      "qkv_output_indices": [
+        10,
+        19,
+        30,
+        31,
+        42,
+        51,
+        62,
+        63,
+        74,
+        83,
+        94,
+        95,
+        106,
+        115,
+        126,
+        127,
+        128,
+        135,
+        136,
+        153,
+        160,
+        167,
+        168,
+        185,
+        192,
+        199,
+        200,
+        217,
+        224,
+        231,
+        232,
+        249
+      ],
+      "selected_attention_units": [
+        10,
+        19,
+        30,
+        31,
+        32,
+        39,
+        40,
+        57
+      ]
+    },
+    "gen_selected_indices": [
+      10,
+      19,
+      30,
+      31,
+      32,
+      39,
+      40,
+      57
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.10.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.10.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.10.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.attn.qkv.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.10.m.0.attn.qkv.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.10.m.0.attn.qkv.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.attn.proj.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.attn.proj.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.attn.proj.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.attn.pe.conv",
+        "operation": "prune_depthwise_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.attn.pe.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.ffn.0.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.ffn.1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.10.m.0.ffn.1.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "B541A306E5B715A27EA0DECC3A98CF1FEB5FF86D5B302497CD1C0CB6F8E958D5",
+    "snow_pruning_mapping": {
+      "attention_units_before": 64,
+      "attention_units_removed": 8,
+      "embedding_indices": [
+        10,
+        11,
+        22,
+        30,
+        42,
+        43,
+        54,
+        62,
+        64,
+        65,
+        66,
+        78,
+        96,
+        97,
+        98,
+        110
+      ],
+      "family": "C2PSA_HEAD_AWARE_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 112,
+      "hidden_channels_before": 128,
+      "hidden_channels_removed": 16,
+      "operations": [
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110,
+            138,
+            139,
+            150,
+            158,
+            170,
+            171,
+            182,
+            190,
+            192,
+            193,
+            194,
+            206,
+            224,
+            225,
+            226,
+            238
+          ],
+          "module_path": "model.10.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110,
+            138,
+            139,
+            150,
+            158,
+            170,
+            171,
+            182,
+            190,
+            192,
+            193,
+            194,
+            206,
+            224,
+            225,
+            226,
+            238
+          ],
+          "module_path": "model.10.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110,
+            138,
+            139,
+            150,
+            158,
+            170,
+            171,
+            182,
+            190,
+            192,
+            193,
+            194,
+            206,
+            224,
+            225,
+            226,
+            238
+          ],
+          "module_path": "model.10.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.attn.qkv.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            74,
+            75,
+            86,
+            94,
+            106,
+            107,
+            118,
+            126,
+            128,
+            129,
+            130,
+            142,
+            160,
+            161,
+            162,
+            174,
+            192,
+            193,
+            194,
+            206,
+            224,
+            225,
+            226,
+            238
+          ],
+          "module_path": "model.10.m.0.attn.qkv.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            74,
+            75,
+            86,
+            94,
+            106,
+            107,
+            118,
+            126,
+            128,
+            129,
+            130,
+            142,
+            160,
+            161,
+            162,
+            174,
+            192,
+            193,
+            194,
+            206,
+            224,
+            225,
+            226,
+            238
+          ],
+          "module_path": "model.10.m.0.attn.qkv.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.attn.proj.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.attn.proj.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.attn.proj.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.attn.pe.conv",
+          "operation": "prune_depthwise_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.attn.pe.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.ffn.0.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.ffn.1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            10,
+            11,
+            22,
+            30,
+            42,
+            43,
+            54,
+            62,
+            64,
+            65,
+            66,
+            78,
+            96,
+            97,
+            98,
+            110
+          ],
+          "module_path": "model.10.m.0.ffn.1.bn",
+          "operation": "prune_out_channels"
+        }
+      ],
+      "qkv_output_indices": [
+        10,
+        11,
+        22,
+        30,
+        42,
+        43,
+        54,
+        62,
+        74,
+        75,
+        86,
+        94,
+        106,
+        107,
+        118,
+        126,
+        128,
+        129,
+        130,
+        142,
+        160,
+        161,
+        162,
+        174,
+        192,
+        193,
+        194,
+        206,
+        224,
+        225,
+        226,
+        238
+      ],
+      "selected_attention_units": [
+        10,
+        11,
+        22,
+        30,
+        32,
+        33,
+        34,
+        46
+      ]
+    },
+    "snow_selected_indices": [
+      10,
+      11,
+      22,
+      30,
+      32,
+      33,
+      34,
+      46
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.10.cv1.conv",
+        "original_depgraph_id": "G003",
+        "reason": "C2PSA paired split and static-attribute rule required"
+      },
+      {
+        "module_path": "model.10.m.0.ffn.1.conv",
+        "original_depgraph_id": "G006",
+        "reason": "C2PSA paired split and static-attribute rule required"
+      }
+    ]
+  },
+  "CDG006": {
+    "block_path": "model.13",
+    "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 56,
+      "hidden_channels_before": 64,
+      "hidden_channels_removed": 8,
+      "logical_indices": [
+        6,
+        16,
+        23,
+        25,
+        39,
+        49,
+        50,
+        51
+      ],
+      "operations": [
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            6,
+            16,
+            23,
+            25,
+            39,
+            49,
+            50,
+            51,
+            70,
+            80,
+            87,
+            89,
+            103,
+            113,
+            114,
+            115
+          ],
+          "module_path": "model.13.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            6,
+            16,
+            23,
+            25,
+            39,
+            49,
+            50,
+            51,
+            70,
+            80,
+            87,
+            89,
+            103,
+            113,
+            114,
+            115
+          ],
+          "module_path": "model.13.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 168,
+          "channels_before": 192,
+          "indices": [
+            6,
+            16,
+            23,
+            25,
+            39,
+            49,
+            50,
+            51,
+            70,
+            80,
+            87,
+            89,
+            103,
+            113,
+            114,
+            115,
+            134,
+            144,
+            151,
+            153,
+            167,
+            177,
+            178,
+            179
+          ],
+          "module_path": "model.13.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            16,
+            23,
+            25,
+            39,
+            49,
+            50,
+            51
+          ],
+          "module_path": "model.13.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            16,
+            23,
+            25,
+            39,
+            49,
+            50,
+            51
+          ],
+          "module_path": "model.13.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            16,
+            23,
+            25,
+            39,
+            49,
+            50,
+            51
+          ],
+          "module_path": "model.13.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            16,
+            23,
+            25,
+            39,
+            49,
+            50,
+            51
+          ],
+          "module_path": "model.13.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "gen_selected_indices": [
+      6,
+      16,
+      23,
+      25,
+      39,
+      49,
+      50,
+      51
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.13.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.13.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 168,
+        "channels_before": 192,
+        "indices_removed": 24,
+        "module_path": "model.13.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.13.m.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.13.m.0.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.13.m.0.cv3.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.13.m.0.cv3.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "6851F2F997DD9BFCB9FEA77938C709F3D94B4E0CAAE5CF28F3D25CEEB63AC2A6",
+    "snow_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 56,
+      "hidden_channels_before": 64,
+      "hidden_channels_removed": 8,
+      "logical_indices": [
+        6,
+        22,
+        23,
+        24,
+        32,
+        39,
+        49,
+        50
+      ],
+      "operations": [
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            6,
+            22,
+            23,
+            24,
+            32,
+            39,
+            49,
+            50,
+            70,
+            86,
+            87,
+            88,
+            96,
+            103,
+            113,
+            114
+          ],
+          "module_path": "model.13.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            6,
+            22,
+            23,
+            24,
+            32,
+            39,
+            49,
+            50,
+            70,
+            86,
+            87,
+            88,
+            96,
+            103,
+            113,
+            114
+          ],
+          "module_path": "model.13.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 168,
+          "channels_before": 192,
+          "indices": [
+            6,
+            22,
+            23,
+            24,
+            32,
+            39,
+            49,
+            50,
+            70,
+            86,
+            87,
+            88,
+            96,
+            103,
+            113,
+            114,
+            134,
+            150,
+            151,
+            152,
+            160,
+            167,
+            177,
+            178
+          ],
+          "module_path": "model.13.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            22,
+            23,
+            24,
+            32,
+            39,
+            49,
+            50
+          ],
+          "module_path": "model.13.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            22,
+            23,
+            24,
+            32,
+            39,
+            49,
+            50
+          ],
+          "module_path": "model.13.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            22,
+            23,
+            24,
+            32,
+            39,
+            49,
+            50
+          ],
+          "module_path": "model.13.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            22,
+            23,
+            24,
+            32,
+            39,
+            49,
+            50
+          ],
+          "module_path": "model.13.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "snow_selected_indices": [
+      6,
+      22,
+      23,
+      24,
+      32,
+      39,
+      49,
+      50
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.13.cv1.conv",
+        "original_depgraph_id": "G007",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.13.m.0.cv3.conv",
+        "original_depgraph_id": "G011",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  },
+  "CDG007": {
+    "block_path": "model.16",
+    "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 28,
+      "hidden_channels_before": 32,
+      "hidden_channels_removed": 4,
+      "logical_indices": [
+        3,
+        10,
+        13,
+        31
+      ],
+      "operations": [
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            3,
+            10,
+            13,
+            31,
+            35,
+            42,
+            45,
+            63
+          ],
+          "module_path": "model.16.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            3,
+            10,
+            13,
+            31,
+            35,
+            42,
+            45,
+            63
+          ],
+          "module_path": "model.16.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 84,
+          "channels_before": 96,
+          "indices": [
+            3,
+            10,
+            13,
+            31,
+            35,
+            42,
+            45,
+            63,
+            67,
+            74,
+            77,
+            95
+          ],
+          "module_path": "model.16.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            3,
+            10,
+            13,
+            31
+          ],
+          "module_path": "model.16.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            3,
+            10,
+            13,
+            31
+          ],
+          "module_path": "model.16.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            3,
+            10,
+            13,
+            31
+          ],
+          "module_path": "model.16.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            3,
+            10,
+            13,
+            31
+          ],
+          "module_path": "model.16.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "gen_selected_indices": [
+      3,
+      10,
+      13,
+      31
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.16.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.16.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 84,
+        "channels_before": 96,
+        "indices_removed": 12,
+        "module_path": "model.16.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.16.m.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.16.m.0.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.16.m.0.cv3.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 28,
+        "channels_before": 32,
+        "indices_removed": 4,
+        "module_path": "model.16.m.0.cv3.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "630460180A04F2E8D1E9BC77CBB9A388D056218A1334DECB80CB141F7D17A738",
+    "snow_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 28,
+      "hidden_channels_before": 32,
+      "hidden_channels_removed": 4,
+      "logical_indices": [
+        10,
+        13,
+        14,
+        22
+      ],
+      "operations": [
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            10,
+            13,
+            14,
+            22,
+            42,
+            45,
+            46,
+            54
+          ],
+          "module_path": "model.16.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            10,
+            13,
+            14,
+            22,
+            42,
+            45,
+            46,
+            54
+          ],
+          "module_path": "model.16.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 84,
+          "channels_before": 96,
+          "indices": [
+            10,
+            13,
+            14,
+            22,
+            42,
+            45,
+            46,
+            54,
+            74,
+            77,
+            78,
+            86
+          ],
+          "module_path": "model.16.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            10,
+            13,
+            14,
+            22
+          ],
+          "module_path": "model.16.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            10,
+            13,
+            14,
+            22
+          ],
+          "module_path": "model.16.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            10,
+            13,
+            14,
+            22
+          ],
+          "module_path": "model.16.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 28,
+          "channels_before": 32,
+          "indices": [
+            10,
+            13,
+            14,
+            22
+          ],
+          "module_path": "model.16.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "snow_selected_indices": [
+      10,
+      13,
+      14,
+      22
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.16.cv1.conv",
+        "original_depgraph_id": "G016",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.16.m.0.cv3.conv",
+        "original_depgraph_id": "G020",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  },
+  "CDG008": {
+    "block_path": "model.19",
+    "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 56,
+      "hidden_channels_before": 64,
+      "hidden_channels_removed": 8,
+      "logical_indices": [
+        6,
+        13,
+        26,
+        32,
+        40,
+        44,
+        49,
+        51
+      ],
+      "operations": [
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            6,
+            13,
+            26,
+            32,
+            40,
+            44,
+            49,
+            51,
+            70,
+            77,
+            90,
+            96,
+            104,
+            108,
+            113,
+            115
+          ],
+          "module_path": "model.19.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            6,
+            13,
+            26,
+            32,
+            40,
+            44,
+            49,
+            51,
+            70,
+            77,
+            90,
+            96,
+            104,
+            108,
+            113,
+            115
+          ],
+          "module_path": "model.19.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 168,
+          "channels_before": 192,
+          "indices": [
+            6,
+            13,
+            26,
+            32,
+            40,
+            44,
+            49,
+            51,
+            70,
+            77,
+            90,
+            96,
+            104,
+            108,
+            113,
+            115,
+            134,
+            141,
+            154,
+            160,
+            168,
+            172,
+            177,
+            179
+          ],
+          "module_path": "model.19.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            13,
+            26,
+            32,
+            40,
+            44,
+            49,
+            51
+          ],
+          "module_path": "model.19.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            13,
+            26,
+            32,
+            40,
+            44,
+            49,
+            51
+          ],
+          "module_path": "model.19.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            13,
+            26,
+            32,
+            40,
+            44,
+            49,
+            51
+          ],
+          "module_path": "model.19.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            6,
+            13,
+            26,
+            32,
+            40,
+            44,
+            49,
+            51
+          ],
+          "module_path": "model.19.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "gen_selected_indices": [
+      6,
+      13,
+      26,
+      32,
+      40,
+      44,
+      49,
+      51
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.19.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.19.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 168,
+        "channels_before": 192,
+        "indices_removed": 24,
+        "module_path": "model.19.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.19.m.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.19.m.0.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.19.m.0.cv3.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 56,
+        "channels_before": 64,
+        "indices_removed": 8,
+        "module_path": "model.19.m.0.cv3.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "0E1879EFC90215428537DDA98E99A1549CECFD7B1611D9411FE7AB1458D3209E",
+    "snow_pruning_mapping": {
+      "family": "C3k2_NONATTENTION_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 56,
+      "hidden_channels_before": 64,
+      "hidden_channels_removed": 8,
+      "logical_indices": [
+        1,
+        6,
+        8,
+        23,
+        27,
+        39,
+        40,
+        47
+      ],
+      "operations": [
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            1,
+            6,
+            8,
+            23,
+            27,
+            39,
+            40,
+            47,
+            65,
+            70,
+            72,
+            87,
+            91,
+            103,
+            104,
+            111
+          ],
+          "module_path": "model.19.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            1,
+            6,
+            8,
+            23,
+            27,
+            39,
+            40,
+            47,
+            65,
+            70,
+            72,
+            87,
+            91,
+            103,
+            104,
+            111
+          ],
+          "module_path": "model.19.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 168,
+          "channels_before": 192,
+          "indices": [
+            1,
+            6,
+            8,
+            23,
+            27,
+            39,
+            40,
+            47,
+            65,
+            70,
+            72,
+            87,
+            91,
+            103,
+            104,
+            111,
+            129,
+            134,
+            136,
+            151,
+            155,
+            167,
+            168,
+            175
+          ],
+          "module_path": "model.19.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            1,
+            6,
+            8,
+            23,
+            27,
+            39,
+            40,
+            47
+          ],
+          "module_path": "model.19.m.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            1,
+            6,
+            8,
+            23,
+            27,
+            39,
+            40,
+            47
+          ],
+          "module_path": "model.19.m.0.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            1,
+            6,
+            8,
+            23,
+            27,
+            39,
+            40,
+            47
+          ],
+          "module_path": "model.19.m.0.cv3.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 56,
+          "channels_before": 64,
+          "indices": [
+            1,
+            6,
+            8,
+            23,
+            27,
+            39,
+            40,
+            47
+          ],
+          "module_path": "model.19.m.0.cv3.bn",
+          "operation": "prune_out_channels"
+        }
+      ]
+    },
+    "snow_selected_indices": [
+      1,
+      6,
+      8,
+      23,
+      27,
+      39,
+      40,
+      47
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.19.cv1.conv",
+        "original_depgraph_id": "G026",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.19.m.0.cv3.conv",
+        "original_depgraph_id": "G030",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  },
+  "CDG009": {
+    "block_path": "model.22",
+    "family": "C3K2_ATTENTION_HEAD_AWARE_LOGICAL_WIDTH_V1",
+    "gen_pruning_mapping": {
+      "attention_units_before": 64,
+      "attention_units_removed": 8,
+      "embedding_indices": [
+        3,
+        17,
+        25,
+        30,
+        35,
+        49,
+        57,
+        62,
+        65,
+        75,
+        88,
+        94,
+        97,
+        107,
+        120,
+        126
+      ],
+      "family": "C3K2_ATTENTION_HEAD_AWARE_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 112,
+      "hidden_channels_before": 128,
+      "hidden_channels_removed": 16,
+      "operations": [
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126,
+            131,
+            145,
+            153,
+            158,
+            163,
+            177,
+            185,
+            190,
+            193,
+            203,
+            216,
+            222,
+            225,
+            235,
+            248,
+            254
+          ],
+          "module_path": "model.22.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126,
+            131,
+            145,
+            153,
+            158,
+            163,
+            177,
+            185,
+            190,
+            193,
+            203,
+            216,
+            222,
+            225,
+            235,
+            248,
+            254
+          ],
+          "module_path": "model.22.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 336,
+          "channels_before": 384,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126,
+            131,
+            145,
+            153,
+            158,
+            163,
+            177,
+            185,
+            190,
+            193,
+            203,
+            216,
+            222,
+            225,
+            235,
+            248,
+            254,
+            259,
+            273,
+            281,
+            286,
+            291,
+            305,
+            313,
+            318,
+            321,
+            331,
+            344,
+            350,
+            353,
+            363,
+            376,
+            382
+          ],
+          "module_path": "model.22.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.0.cv2.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.0.cv2.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.attn.qkv.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            67,
+            81,
+            89,
+            94,
+            99,
+            113,
+            121,
+            126,
+            129,
+            139,
+            152,
+            158,
+            161,
+            171,
+            184,
+            190,
+            193,
+            203,
+            216,
+            222,
+            225,
+            235,
+            248,
+            254
+          ],
+          "module_path": "model.22.m.0.1.attn.qkv.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            67,
+            81,
+            89,
+            94,
+            99,
+            113,
+            121,
+            126,
+            129,
+            139,
+            152,
+            158,
+            161,
+            171,
+            184,
+            190,
+            193,
+            203,
+            216,
+            222,
+            225,
+            235,
+            248,
+            254
+          ],
+          "module_path": "model.22.m.0.1.attn.qkv.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.attn.proj.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.attn.proj.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.attn.proj.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.attn.pe.conv",
+          "operation": "prune_depthwise_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.attn.pe.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.ffn.0.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.ffn.1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            17,
+            25,
+            30,
+            35,
+            49,
+            57,
+            62,
+            65,
+            75,
+            88,
+            94,
+            97,
+            107,
+            120,
+            126
+          ],
+          "module_path": "model.22.m.0.1.ffn.1.bn",
+          "operation": "prune_out_channels"
+        }
+      ],
+      "qkv_output_indices": [
+        3,
+        17,
+        25,
+        30,
+        35,
+        49,
+        57,
+        62,
+        67,
+        81,
+        89,
+        94,
+        99,
+        113,
+        121,
+        126,
+        129,
+        139,
+        152,
+        158,
+        161,
+        171,
+        184,
+        190,
+        193,
+        203,
+        216,
+        222,
+        225,
+        235,
+        248,
+        254
+      ],
+      "selected_attention_units": [
+        3,
+        17,
+        25,
+        30,
+        33,
+        43,
+        56,
+        62
+      ]
+    },
+    "gen_selected_indices": [
+      3,
+      17,
+      25,
+      30,
+      33,
+      43,
+      56,
+      62
+    ],
+    "operation_skeleton": [
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.22.cv1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.22.cv1.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 336,
+        "channels_before": 384,
+        "indices_removed": 48,
+        "module_path": "model.22.cv2.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.0.cv1.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.0.cv2.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.0.cv2.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.attn.qkv.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.22.m.0.1.attn.qkv.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 224,
+        "channels_before": 256,
+        "indices_removed": 32,
+        "module_path": "model.22.m.0.1.attn.qkv.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.attn.proj.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.attn.proj.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.attn.proj.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.attn.pe.conv",
+        "operation": "prune_depthwise_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.attn.pe.bn",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.ffn.0.conv",
+        "operation": "prune_in_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.ffn.1.conv",
+        "operation": "prune_out_channels"
+      },
+      {
+        "channels_after": 112,
+        "channels_before": 128,
+        "indices_removed": 16,
+        "module_path": "model.22.m.0.1.ffn.1.bn",
+        "operation": "prune_out_channels"
+      }
+    ],
+    "operation_skeleton_sha256": "2691B5CD3CAD51E56FA72420A91860B3DE495762DB9C1505D3BB38EDDDA6B22A",
+    "snow_pruning_mapping": {
+      "attention_units_before": 64,
+      "attention_units_removed": 8,
+      "embedding_indices": [
+        3,
+        7,
+        11,
+        25,
+        35,
+        39,
+        43,
+        57,
+        75,
+        78,
+        88,
+        91,
+        107,
+        110,
+        120,
+        123
+      ],
+      "family": "C3K2_ATTENTION_HEAD_AWARE_LOGICAL_WIDTH_V1",
+      "hidden_channels_after": 112,
+      "hidden_channels_before": 128,
+      "hidden_channels_removed": 16,
+      "operations": [
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123,
+            131,
+            135,
+            139,
+            153,
+            163,
+            167,
+            171,
+            185,
+            203,
+            206,
+            216,
+            219,
+            235,
+            238,
+            248,
+            251
+          ],
+          "module_path": "model.22.cv1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123,
+            131,
+            135,
+            139,
+            153,
+            163,
+            167,
+            171,
+            185,
+            203,
+            206,
+            216,
+            219,
+            235,
+            238,
+            248,
+            251
+          ],
+          "module_path": "model.22.cv1.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 336,
+          "channels_before": 384,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123,
+            131,
+            135,
+            139,
+            153,
+            163,
+            167,
+            171,
+            185,
+            203,
+            206,
+            216,
+            219,
+            235,
+            238,
+            248,
+            251,
+            259,
+            263,
+            267,
+            281,
+            291,
+            295,
+            299,
+            313,
+            331,
+            334,
+            344,
+            347,
+            363,
+            366,
+            376,
+            379
+          ],
+          "module_path": "model.22.cv2.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.0.cv1.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.0.cv2.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.0.cv2.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.attn.qkv.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            67,
+            71,
+            75,
+            89,
+            99,
+            103,
+            107,
+            121,
+            139,
+            142,
+            152,
+            155,
+            171,
+            174,
+            184,
+            187,
+            203,
+            206,
+            216,
+            219,
+            235,
+            238,
+            248,
+            251
+          ],
+          "module_path": "model.22.m.0.1.attn.qkv.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 224,
+          "channels_before": 256,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            67,
+            71,
+            75,
+            89,
+            99,
+            103,
+            107,
+            121,
+            139,
+            142,
+            152,
+            155,
+            171,
+            174,
+            184,
+            187,
+            203,
+            206,
+            216,
+            219,
+            235,
+            238,
+            248,
+            251
+          ],
+          "module_path": "model.22.m.0.1.attn.qkv.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.attn.proj.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.attn.proj.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.attn.proj.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.attn.pe.conv",
+          "operation": "prune_depthwise_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.attn.pe.bn",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.ffn.0.conv",
+          "operation": "prune_in_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.ffn.1.conv",
+          "operation": "prune_out_channels"
+        },
+        {
+          "channels_after": 112,
+          "channels_before": 128,
+          "indices": [
+            3,
+            7,
+            11,
+            25,
+            35,
+            39,
+            43,
+            57,
+            75,
+            78,
+            88,
+            91,
+            107,
+            110,
+            120,
+            123
+          ],
+          "module_path": "model.22.m.0.1.ffn.1.bn",
+          "operation": "prune_out_channels"
+        }
+      ],
+      "qkv_output_indices": [
+        3,
+        7,
+        11,
+        25,
+        35,
+        39,
+        43,
+        57,
+        67,
+        71,
+        75,
+        89,
+        99,
+        103,
+        107,
+        121,
+        139,
+        142,
+        152,
+        155,
+        171,
+        174,
+        184,
+        187,
+        203,
+        206,
+        216,
+        219,
+        235,
+        238,
+        248,
+        251
+      ],
+      "selected_attention_units": [
+        3,
+        7,
+        11,
+        25,
+        43,
+        46,
+        56,
+        59
+      ]
+    },
+    "snow_selected_indices": [
+      3,
+      7,
+      11,
+      25,
+      43,
+      46,
+      56,
+      59
+    ],
+    "source_deferred_roots": [
+      {
+        "module_path": "model.22.cv1.conv",
+        "original_depgraph_id": "G040",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.22.m.0.0.cv2.conv",
+        "original_depgraph_id": "G043",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      },
+      {
+        "module_path": "model.22.m.0.1.ffn.1.conv",
+        "original_depgraph_id": "G045",
+        "reason": "C3k2 split/residual-aware paired rule required"
+      }
+    ]
+  }
+}

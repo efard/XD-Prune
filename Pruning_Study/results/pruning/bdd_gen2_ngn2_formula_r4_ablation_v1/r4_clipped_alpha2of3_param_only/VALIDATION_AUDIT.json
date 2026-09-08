@@ -1,0 +1,80 @@
+{
+  "builder": "Pruning_Study/scripts/build_bdd_r4_formula_t4.py",
+  "builder_sha256": "492D42AD16DCF8ABA306941E49ADD3AFDE9A1B3C457C04B7F4215083A509A0B3",
+  "epsilon": 0.001,
+  "formula_id": "BDD_R4_CLIPPED_WEIGHTED_PARAM_ONLY_V1",
+  "ratios": [
+    {
+      "T3": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/12_5pct/tables/T3_R4_CLIPPED_WEIGHTED_12_5PCT.csv",
+      "T3_sha256": "E50B33A4E70DC26A8A355DA50EF981A192CB6765893E9029E8D1541236FE87C3",
+      "T4": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/12_5pct/tables/T4_R4_CLIPPED_PRUNABILITY_12_5PCT.csv",
+      "T4_sha256": "D4B6D64E90FD5FDCC0D9C2A55055158CE6D21815DC6F068664D67DFD3C4360DE",
+      "all_numeric_values_finite": true,
+      "minimum_denominator": 0.0012539294407008443,
+      "minimum_sensitivity": 0.00025392944070084427,
+      "ratio_percent": 12.5,
+      "rows": 51,
+      "sequence": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/12_5pct/tables/PRUNING_SEQUENCE_R4_CLIPPED_12_5PCT.csv",
+      "sequence_sha256": "074F2CC1BD6F0713C8F2293E5801D01551EC759B8BB180EC2AF9320FBC58049B",
+      "source": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/12_5pct/tables/PAIRED_GEN2_NGN2_12_5PCT.csv",
+      "source_sha256": "F404063534C42A35EF7B88B3B50DECE204406F48A6465C75D8D0FCF5059EC42C",
+      "top_five_groups": [
+        "DG026",
+        "DG004",
+        "DG025",
+        "DG038",
+        "CDG009"
+      ],
+      "unique_groups": 51
+    },
+    {
+      "T3": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/25pct/tables/T3_R4_CLIPPED_WEIGHTED_25PCT.csv",
+      "T3_sha256": "0BBD10BD4452A0CB39D16CBB51310284E6D6B97E25AC6994F8465C71B661A5F9",
+      "T4": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/25pct/tables/T4_R4_CLIPPED_PRUNABILITY_25PCT.csv",
+      "T4_sha256": "BD737FCE3E7D725C2008D165AAE42655CE1EB4B33F353BD5A399FF55AECA3770",
+      "all_numeric_values_finite": true,
+      "minimum_denominator": 0.001,
+      "minimum_sensitivity": 0.0,
+      "ratio_percent": 25.0,
+      "rows": 51,
+      "sequence": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/25pct/tables/PRUNING_SEQUENCE_R4_CLIPPED_25PCT.csv",
+      "sequence_sha256": "05AE5644950C6CF2EE11E7DFED2B28E2427A9BE65318128E75AA90BE06530A60",
+      "source": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/25pct/tables/PAIRED_GEN2_NGN2_25PCT.csv",
+      "source_sha256": "13DEC78873851290B35A091BCE8355DE8EFE86D065C2B6814A09FCBEE0794C5B",
+      "top_five_groups": [
+        "DG026",
+        "DG025",
+        "DG038",
+        "DG004",
+        "DG040"
+      ],
+      "unique_groups": 51
+    },
+    {
+      "T3": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/37_5pct/tables/T3_R4_CLIPPED_WEIGHTED_37_5PCT.csv",
+      "T3_sha256": "2CB3041701AD15F8EF3FCDCFCE63E0A00744EB85AA6DB455316249A6511D81B8",
+      "T4": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/37_5pct/tables/T4_R4_CLIPPED_PRUNABILITY_37_5PCT.csv",
+      "T4_sha256": "E045D6F4C27D211189CF6016BEE8314B998B786E4DEA2C8EBB2597FCF045D5E8",
+      "all_numeric_values_finite": true,
+      "minimum_denominator": 0.001217712397232784,
+      "minimum_sensitivity": 0.00021771239723278386,
+      "ratio_percent": 37.5,
+      "rows": 51,
+      "sequence": "Pruning_Study/results/pruning/bdd_gen2_ngn2_formula_r4_ablation_v1/r4_clipped_alpha2of3_param_only/37_5pct/tables/PRUNING_SEQUENCE_R4_CLIPPED_37_5PCT.csv",
+      "sequence_sha256": "8035F0E9946E08B3392755074CDFE85EED2C9DD2C742C0F04EBE539BA9A3AAF0",
+      "source": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/37_5pct/tables/PAIRED_GEN2_NGN2_37_5PCT.csv",
+      "source_sha256": "8A92E131110CC554828EA10F40795F265674467828416AD7D4D7B23445975080",
+      "top_five_groups": [
+        "DG026",
+        "DG025",
+        "DG040",
+        "DG039",
+        "DG004"
+      ],
+      "unique_groups": 51
+    }
+  ],
+  "schema": "bdd_formula_r4_weighted_parameter_only_audit_v1",
+  "status": "PASS",
+  "variant": "clipped"
+}

@@ -1,0 +1,98 @@
+{
+  "freeze_id": "BDD_NEGATIVE_AD_BOOTSTRAP_FREEZE_V1",
+  "status": "FROZEN",
+  "purpose": "Test only the seven signed negative BDD isolated-pruning AD records for validation-image sampling stability. This is not a multi-seed training study.",
+  "source_sweep_root": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1",
+  "source_t1_t2_freeze": "Pruning_Study/configs/pruning/BDD_T1_T2_EXPERIMENT_FREEZE_V1.json",
+  "source_t1_t2_freeze_sha256": "5301BCBD1079085ADF38762EB45B23FF1B6ACB277B9D3A12C82A77EEA152774C",
+  "evaluation_config": "Pruning_Study/configs/pruning/t1_t2_eval_v1.yaml",
+  "evaluation_config_sha256": "A289C8A8C24C0FD82767E27305593A2EC05E524E30B256061C4D698FE43DBDC1",
+  "research_validator": "Pruning_Study/scripts/research_detection_validator.py",
+  "research_validator_sha256": "7DE9B49E40733639AB0F5206B068AF9201D6A0F650E5EBA5290E34BE35AD3C4C",
+  "output_root": "Pruning_Study/results/pruning/bdd_gen2_ngn2_negative_ad_bootstrap_v1",
+  "bootstrap": {
+    "iterations": 5000,
+    "seed": 42,
+    "design": "paired image-level nonparametric bootstrap; resample the same validation-image identifiers for baseline and exact reconstructed pruned model; reject resamples that omit a represented class",
+    "confidence_interval": "two-sided percentile 95%",
+    "primary_metric": "mAP50-95",
+    "decision": "An apparent improvement is supported by this validation-resampling analysis only when the upper 95% AD bound is below zero. Otherwise retain the signed observation but do not count it as a pruning benefit."
+  },
+  "policy": {
+    "negative_cases_only": true,
+    "fresh_checkpoint_per_case": true,
+    "replay_saved_selected_indices": true,
+    "recompute_importance": false,
+    "isolated_group": true,
+    "fine_tuning": false,
+    "batchnorm_update": false,
+    "cumulative_pruning": false,
+    "test_data_used": false,
+    "independent_training_seeds": false
+  },
+  "negative_cases": [
+    {
+      "domain": "GEN2",
+      "group_id": "DG004",
+      "group_kind": "GENERIC",
+      "ratio_percent": 12.5,
+      "source_record": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/12_5pct/runs/GEN2_DG004.json",
+      "source_record_sha256": "EA8FFC3603B63F076B2EC392A92DD86DCB0919DEB7E2C81B79AF69CD6D54AE20",
+      "source_signed_AD_map50_95": -0.0003125377541826069
+    },
+    {
+      "domain": "NGN2",
+      "group_id": "CDG004",
+      "group_kind": "CUSTOM",
+      "ratio_percent": 12.5,
+      "source_record": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/12_5pct/runs/NGN2_CDG004.json",
+      "source_record_sha256": "ED511436B9922E21442CD9AEC896B7F93F1A696A7F7E5F9AAD5E6021796FC064",
+      "source_signed_AD_map50_95": -0.0006045550158765289
+    },
+    {
+      "domain": "NGN2",
+      "group_id": "DG019",
+      "group_kind": "GENERIC",
+      "ratio_percent": 12.5,
+      "source_record": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/12_5pct/runs/NGN2_DG019.json",
+      "source_record_sha256": "A04D89C9210319CBDFE63CFF301A2E920A34FDCF06F897B8BFDA3ACD4484EA0A",
+      "source_signed_AD_map50_95": -0.00012268324610059667
+    },
+    {
+      "domain": "NGN2",
+      "group_id": "DG034",
+      "group_kind": "GENERIC",
+      "ratio_percent": 12.5,
+      "source_record": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/12_5pct/runs/NGN2_DG034.json",
+      "source_record_sha256": "3DE2A27BB249924E217BC872344A9AE0A06C7251975B7C6F3A40F4A7393526B9",
+      "source_signed_AD_map50_95": -0.000802300612128326
+    },
+    {
+      "domain": "GEN2",
+      "group_id": "DG026",
+      "group_kind": "GENERIC",
+      "ratio_percent": 25.0,
+      "source_record": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/25pct/runs/GEN2_DG026.json",
+      "source_record_sha256": "7B29A78E827D85006CBF4CCB13FA2B7DB109C8D7DA61FD6D873D28F40A29A1D6",
+      "source_signed_AD_map50_95": -5.301581922434462e-05
+    },
+    {
+      "domain": "NGN2",
+      "group_id": "DG026",
+      "group_kind": "GENERIC",
+      "ratio_percent": 25.0,
+      "source_record": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/25pct/runs/NGN2_DG026.json",
+      "source_record_sha256": "C8645FDF4B312682C8F796AC6E95231201158F6AB76D678FD508EEFAEA51173A",
+      "source_signed_AD_map50_95": -7.692282795668248e-05
+    },
+    {
+      "domain": "NGN2",
+      "group_id": "DG039",
+      "group_kind": "GENERIC",
+      "ratio_percent": 25.0,
+      "source_record": "Pruning_Study/results/pruning/bdd_gen2_ngn2_t1_t2_v1/25pct/runs/NGN2_DG039.json",
+      "source_record_sha256": "D49BF84A5590E52E7B5B65A9CED4C65D7E45D4D33941EE4F25DB7B356AA378E0",
+      "source_signed_AD_map50_95": -0.00012039039902272952
+    }
+  ]
+}
