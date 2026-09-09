@@ -1,0 +1,37 @@
+{
+  "domain": "GEN",
+  "files": {
+    "metadata.yaml": {
+      "bytes": 561,
+      "path": "metadata.yaml",
+      "sha256": "6f6c48c86ff4f38dbab134923434b036317a17e487e0d69ece169045dad153c5"
+    },
+    "model.ncnn.bin": {
+      "bytes": 4067880,
+      "path": "model.ncnn.bin",
+      "sha256": "1f01ad6fc007e2f8a3c091d50ace2c322a3741c861cc3c20886702dcc40187d3"
+    },
+    "model.ncnn.param": {
+      "bytes": 26336,
+      "path": "model.ncnn.param",
+      "sha256": "8a00821ae8d760ae39064e1c836c8514afb0cc640d17078c0fa02ab2c1f67ff5"
+    },
+    "model.pt": {
+      "bytes": 4811487,
+      "path": "model.pt",
+      "sha256": "52431d9aebb986bb0149bfc3ee77d00cc7a1f4d4e6c325d16dec9ec96b642980"
+    }
+  },
+  "input_size": 640,
+  "method": "XD-Prune T7",
+  "model_id": "7_t7_gen_p56_25_640_fp32",
+  "ncnn_export": {
+    "end2end": false,
+    "source_checkpoint_sha256": "2e488321843365f5688187b774869794447c9a76227ce4b7da1a5c2f4d7f20fe",
+    "torch_version": "2.4.1+cu121",
+    "ultralytics_version": "8.4.21"
+  },
+  "paper_role": "proposed",
+  "precision": "fp32",
+  "schema": "xdprune_public_paper_model_v1"
+}

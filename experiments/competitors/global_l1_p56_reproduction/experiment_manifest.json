@@ -1,0 +1,66 @@
+{
+  "baseline_checkpoint": "results/baselines/b_gen_mio_yolo26n_s42_v1/weights/best.pt",
+  "baseline_checkpoint_sha256": "d0250e9ffd459c2c46a01ac81421d95e9e1d0bb35799b5dede30c92e7b94d250",
+  "baseline_parameters": 2508090,
+  "catalogue": "results/depgraph/week1_safe_v3/canonical_validated_groups.csv",
+  "catalogue_sha256": "24398da08fa96fb9b74038b51a63ee49d24ed94b45a651d7873855719204dd06",
+  "comparison_target": "Matched to the proposed T7 GEN p56 target parameter count",
+  "custom_project_pruning_rules_used": false,
+  "detection_head_pruning": false,
+  "distance_from_target_parameters": 53,
+  "domain_information_used_for_selection": false,
+  "eligible_stock_depgraph_groups": 42,
+  "final_parameters": 1083245,
+  "final_reduction_percent": 56.80996295986189,
+  "full_size_public_output_after": {
+    "all_finite": true,
+    "shapes": [
+      [
+        1,
+        300,
+        6
+      ]
+    ],
+    "tensor_count": 1
+  },
+  "method": "global raw L1 filter-sum ranking with DepGraph rebuilt after every channel",
+  "minimum_channels_per_root": "DepGraph legality only; no handcrafted minimum-width cap",
+  "parameter_reduction_percent": 56.80996295986189,
+  "per_root_retention_cap": null,
+  "protected_custom_rule_groups": 9,
+  "raw_model": "experiments/competitors/global_l1_p56_reproduction/raw/global_l1_gen_p56_unrestricted_raw.pth",
+  "raw_model_sha256": "6ede78818a4c7b9477915ed3fc6bdc57d4bd37be19d6e38c61b637c950b20f65",
+  "replayed_on_fresh_baseline": true,
+  "schema": "global_l1_p56_unrestricted_reproduction_v1",
+  "search_seconds": 1024.088177800004,
+  "selected_channel_steps": 2378,
+  "selection_log": "experiments/competitors/global_l1_p56_reproduction/raw/selection_sequence.csv",
+  "selection_log_sha256": "ad08e6c4fe1523c4d7ab46c78b52101ab83aa08d7e3126d0e72dbcdb58b8005a",
+  "state_fingerprint_sha256": "648643c9d425eff5624011bebfbb45bc0b5400d08021fdbda7f70c4ecd1bd85d",
+  "status": "PASS",
+  "target_parameters": 1083192,
+  "target_reduction_percent": 56.81207612167027,
+  "test_data_used": false,
+  "trace_public_output_after": {
+    "all_finite": true,
+    "shapes": [
+      [
+        1,
+        21,
+        6
+      ]
+    ],
+    "tensor_count": 1
+  },
+  "trace_public_output_before": {
+    "all_finite": true,
+    "shapes": [
+      [
+        1,
+        21,
+        6
+      ]
+    ],
+    "tensor_count": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "domain": "NGN2",
+  "files": {
+    "metadata.yaml": {
+      "bytes": 439,
+      "path": "metadata.yaml",
+      "sha256": "595cea7149d9b2cce1967590d989550ffbd33faaa5a4ca899840736545ce0ed8"
+    },
+    "model.ncnn.bin": {
+      "bytes": 4146756,
+      "path": "model.ncnn.bin",
+      "sha256": "02733e6ce89a15e78ea5a690048f20e94b92cf1d5506153e8566a12d767dc34f"
+    },
+    "model.ncnn.param": {
+      "bytes": 26332,
+      "path": "model.ncnn.param",
+      "sha256": "d7bbc1adcf8856dbdb0349f0a4c94b9bb3c0061382d17a0946d1087ef622a5dc"
+    },
+    "model.pt": {
+      "bytes": 4881139,
+      "path": "model.pt",
+      "sha256": "1efe05b486933c3da561b6b56585331d74a19b7d6f1ae46b30e5ece99d09234b"
+    }
+  },
+  "input_size": 640,
+  "method": "FPGM + DepGraph",
+  "model_id": "bdd_ngn2_fpgm_t7_56pct_640_fp32",
+  "ncnn_export": {
+    "end2end": false,
+    "source_checkpoint_sha256": "6af2ae4488662a8cc29c30af8c2392044593e0963ef24d9dea8667c75ac939d0",
+    "torch_version": "2.4.1+cu121",
+    "ultralytics_version": "8.4.21"
+  },
+  "paper_role": "comparator",
+  "precision": "fp32",
+  "schema": "xdprune_public_paper_model_v1"
+}

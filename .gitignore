@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+*secrets*
+
+# Datasets and generated dataset views
+BDD-100K/
+MIO-TCD-Localization/
+rgb_anon/
+data_views/**/images/
+data_views/**/labels/
+data_views/**/*.cache
+
+# Models and deployment binaries
+*.pt
+*.pth
+*.onnx
+*.engine
+*.ncnn.bin
+*.tar.gz
+*.zip
+
+# The 17 explicitly curated paper artifacts are intentionally versioned.
+!models/paper_models/**/*.pt
+!models/paper_models/**/*.ncnn.bin
+
+# Generated experiment outputs
+logs/
+scratch/
+**/training/
+**/weights/
+**/models/final/
+deployment/**/board_results/
+deployment/**/exported_models/
+
+# Manuscript and private working material
+paper_draft_overleaf/
+reports/
+literature/
+HoYins_Work/
+HoYin's_august_work/

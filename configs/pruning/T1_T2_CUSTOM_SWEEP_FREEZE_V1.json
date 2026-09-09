@@ -1,0 +1,87 @@
+{
+  "freeze_id": "T1_T2_CUSTOM_SWEEP_FREEZE_V1",
+  "status": "FROZEN",
+  "frozen_local_date": "2026-07-21",
+  "scope": "Immediate post-pruning T1/T2 accuracy extension for the nine physically validated YOLO26n custom block-aware groups",
+  "parent_freeze": "configs/pruning/T1_T2_FULL_SWEEP_FREEZE_V2.json",
+  "supervisor_framework_preserved": true,
+  "experimental_unit": "one custom dependency-safe logical-width group in one independently loaded domain checkpoint",
+  "expected_domain_group_runs": 18,
+  "sweep_groups": [
+    "CDG001", "CDG002", "CDG003", "CDG004", "CDG005",
+    "CDG006", "CDG007", "CDG008", "CDG009"
+  ],
+  "intervention": {
+    "type": "custom block-aware structured logical-width pruning",
+    "requested_logical_fraction": 0.125,
+    "logical_channel_rule": "k_i = C_i / 8",
+    "importance": "mean-normalized coupled-slice L1 group mean",
+    "attention_selection": "equal number of paired logical units removed from every head",
+    "channel_indices_across_domains": "selected independently from each checkpoint using the identical rule",
+    "fine_tuning_during_sweep": false,
+    "batchnorm_update_during_sweep": false,
+    "cross_group_accumulation": false
+  },
+  "metrics": {
+    "primary": "validation mAP50-95",
+    "overall_ap_iou_thresholds": [0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95],
+    "additional": [
+      "mAP50", "mAP75", "AP95", "precision", "recall", "F1",
+      "per-class precision/recall/F1/AP curve", "parameters before/after/removed",
+      "GFLOPs before/after/removed", "selected logical units", "runtime", "peak RAM", "peak CUDA memory"
+    ],
+    "signed_accuracy_drop": "AD_d,i = M_d,0 - M_d,i",
+    "normalized_signed_drop": "D_d,i = AD_d,i / M_d,0",
+    "sensitivity": "S_i = 0 when max(abs(D_GEN,i),abs(D_SNOW,i)) < 1e-12; otherwise (D_GEN,i-D_SNOW,i)/max(abs(D_GEN,i),abs(D_SNOW,i))",
+    "prunability_formula_status": "NOT_FROZEN"
+  },
+  "baseline_models": {
+    "GEN": {
+      "path": "results/baselines/b_gen_mio_yolo26n_s42_v1/weights/best.pt",
+      "sha256": "D0250E9FFD459C2C46A01AC81421D95E9E1D0BB35799B5DEDE30C92E7B94D250",
+      "frozen_map50_95": 0.6471450411564877,
+      "validation_images": 11000,
+      "validation_instances": 29481,
+      "dataset_yaml": "data_views/mio_full_s42_v1/mio_tcd_full.yaml",
+      "dataset_yaml_sha256": "AD70B3845432420B35CDD831E9CB0BB23169E5FDD5688E6619C443243941F433",
+      "baseline_reference": "results/pruning/t1_t2_full_sweep_v2/baselines/GEN.json",
+      "baseline_reference_sha256": "CB84BFAD52EA5D66DD0CCBA803D257FA1E5043E9F28D8F147ED226D2FB0824CC"
+    },
+    "SNOW": {
+      "path": "results/baselines/b_snow_acdc_yolo26n_s42_v1/weights/best.pt",
+      "sha256": "5C9BCEBA2872E98EE1BEB967E10E4CA10E17BEA6A8F8200E306BCDAE067BDB68",
+      "frozen_map50_95": 0.19198061496745905,
+      "validation_images": 100,
+      "validation_instances": 818,
+      "dataset_yaml": "data_views/acdc_snow_official_v1/acdc_snow.yaml",
+      "dataset_yaml_sha256": "2265CB22F4E2C9756B03F5649363B7D679E8F4A512558A499495C54C142E9DBA",
+      "baseline_reference": "results/pruning/t1_t2_full_sweep_v2/baselines/SNOW.json",
+      "baseline_reference_sha256": "FDA7DBC8DB226600233331040F181637C9A3061DDC78BC6AA5D4789135351EE8"
+    }
+  },
+  "evaluation_config": "configs/pruning/t1_t2_eval_v1.yaml",
+  "test_split_policy": "No test split is accessed. MIO test remains locked and ACDC official test labels are withheld.",
+  "files": {
+    "T1_T2_CUSTOM_SWEEP_SPECIFICATION_V1.md": {
+      "bytes": 1095,
+      "sha256": "4BDB99840B8CFE51850871D7789B0FB4D7DBB7E714518933AC6A4E9029A059EF"
+    },
+    "configs/pruning/t1_t2_eval_v1.yaml": {
+      "bytes": 462,
+      "sha256": "A289C8A8C24C0FD82767E27305593A2EC05E524E30B256061C4D698FE43DBDC1"
+    },
+    "results/depgraph/custom_groups_v1/CUSTOM_GROUP_CATALOGUE.csv": {
+      "bytes": 5034,
+      "sha256": "169AC253DB275D926AC6EC7C47D4F245BA265096D5F396AD867EED7A89C44ACB"
+    },
+    "results/depgraph/custom_groups_v1/CUSTOM_GROUP_OPERATIONS.json": {
+      "bytes": 110734,
+      "sha256": "39B5B37C88A7D4CD4BA74C7E4DBAAB6F44D9CBF33238D6F47AA92965F1F6A3FE"
+    },
+    "scripts/yolo26n_custom_pruning_rules.py": {
+      "bytes": 33502,
+      "sha256": "E3D91846C5D04C47953CE8A30B62442E7EB0B8C4B164A8B634291C755A05A4AC"
+    }
+  },
+  "change_control": "Any change to group membership, pruning fraction, custom rule, importance rule, evaluator, validation split, BatchNorm policy, or fine-tuning policy requires a new versioned freeze."
+}

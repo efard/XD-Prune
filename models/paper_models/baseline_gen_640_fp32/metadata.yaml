@@ -1,0 +1,29 @@
+description: 'YOLO26n paper artifact: GEN / Unpruned baseline'
+author: Ultralytics
+date: '2026-08-11T16:57:48.447639'
+version: 8.4.21
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: articulated_truck
+  1: bicycle
+  2: bus
+  3: car
+  4: motorcycle
+  5: motorized_vehicle
+  6: non_motorized_vehicle
+  7: pedestrian
+  8: pickup_truck
+  9: single_unit_truck
+  10: work_van
+args:
+  batch: 1
+  half: false
+channels: 3
+end2end: false

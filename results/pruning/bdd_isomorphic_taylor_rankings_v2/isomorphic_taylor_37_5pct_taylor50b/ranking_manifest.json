@@ -1,0 +1,77 @@
+{
+  "adaptation": {
+    "importance": "first-order Taylor abs(weight * mean training-loss gradient), using Torch-Pruning GroupTaylorImportance for generic DepGraph groups",
+    "isomorphic_scope": "official Torch-Pruning isomorphic topology signature for generic groups; validated custom-rule signature for C3k2/C2PSA units",
+    "one_shot_masks": "channel/unit masks are frozen from the baseline scoring pass; raw replay never uses validation/test data or re-ranks",
+    "shared_queue": "equal-weight mean of domain-specific isomorphic round-robin queue indices; required only to keep the BDD 56% structural protocol common across GEN2 and NGN2"
+  },
+  "calibration": {
+    "GEN2": {
+      "batchnorm_layers_forced_eval": 114,
+      "calibration_batches_seen": 50,
+      "calibration_dataset_images": 37091,
+      "calibration_images_seen": 800,
+      "conv_layers_scored": 126,
+      "gradient_accumulation": "mean loss gradient per Conv2d weight over deterministic training batches",
+      "loss_configuration": {
+        "box_gain": 7.5,
+        "cls_gain": 0.5,
+        "dfl_gain": 1.5,
+        "training_args": "results/baselines/b_gen2_bdd_clear_alltime_yolo26n_s42_v1/args.yaml",
+        "training_args_sha256": "079204E520374B60D052DE20A8D0D9D61025F8FC1E07599BFCE083A4D95064D5"
+      },
+      "mean_loss_across_batches": 33.184658699035644
+    },
+    "NGN2": {
+      "batchnorm_layers_forced_eval": 114,
+      "calibration_batches_seen": 50,
+      "calibration_dataset_images": 10727,
+      "calibration_images_seen": 800,
+      "conv_layers_scored": 126,
+      "gradient_accumulation": "mean loss gradient per Conv2d weight over deterministic training batches",
+      "loss_configuration": {
+        "box_gain": 7.5,
+        "cls_gain": 0.5,
+        "dfl_gain": 1.5,
+        "training_args": "results/baselines/b_ngn2_bdd_adverse_alltime_yolo26n_s42_v1/args.yaml",
+        "training_args_sha256": "4E37A920262A677F3C4ECCEFB822F4BCA8B1530A219869FDA42211FE9F0D7D3E"
+      },
+      "mean_loss_across_batches": 32.04439792633057
+    }
+  },
+  "calibration_batch_size": 16,
+  "calibration_batches": 50,
+  "calibration_batches_policy": "Exactly 50 training batches, matching the official Isomorphic-Pruning implementation default.",
+  "calibration_batches_requested": 50,
+  "calibration_order": "dataset order, shuffle=False, augmentation disabled",
+  "calibration_split": "train",
+  "candidate_count": 49,
+  "completed_utc": "2026-09-02T02:14:46Z",
+  "cuda_device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "custom_groups": 9,
+  "domains": [
+    "GEN2",
+    "NGN2"
+  ],
+  "generic_groups": 42,
+  "groups": 51,
+  "local_pruning_percent": 37.5,
+  "method": "isomorphic_taylor",
+  "paper_basis": "Fang et al., Isomorphic Pruning for Vision Models, ECCV 2024",
+  "protected_groups": {
+    "DG001": "stem remains protected",
+    "DG020": "excluded by the completed cumulative-collapse audit"
+  },
+  "runtime_versions": {
+    "torch": "2.8.0a0+5228986c39.nv25.06",
+    "torch_pruning": "1.6.1",
+    "ultralytics": "8.4.127"
+  },
+  "schema": "bdd_isomorphic_taylor_ranking_manifest_v2",
+  "script": "scripts/rank_bdd_isomorphic_taylor.py",
+  "script_sha256": "2B92197BD5111754DA5F0A3AA93F09139BAEDC628FAEC71CC41A817712265C45",
+  "seed": 42,
+  "shared_queue": "results/pruning/bdd_isomorphic_taylor_rankings_v2/isomorphic_taylor_37_5pct_taylor50b/shared_cumulative_queue.json",
+  "started_utc": "2026-09-02T02:13:55Z",
+  "status": "PASS"
+}

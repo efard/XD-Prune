@@ -1,0 +1,37 @@
+{
+  "domain": "GEN2",
+  "files": {
+    "metadata.yaml": {
+      "bytes": 451,
+      "path": "metadata.yaml",
+      "sha256": "5fb5355f0e79b32cdcb52c296d9fda99320b5979d2d16b4129b048e4f4b4b6a6"
+    },
+    "model.ncnn.bin": {
+      "bytes": 4132788,
+      "path": "model.ncnn.bin",
+      "sha256": "497a5c82ee7f7285168b51fd97dd010c33898068f7f54bd81d3fe9012ea6471a"
+    },
+    "model.ncnn.param": {
+      "bytes": 26334,
+      "path": "model.ncnn.param",
+      "sha256": "92c361521f8d8c704783854cbebc8509dbb12718741b5d2a76161ca84a8d3310"
+    },
+    "model.pt": {
+      "bytes": 4869171,
+      "path": "model.pt",
+      "sha256": "d5f6fff1f707c17fe4a01660248862185c1c57aae7866eaace7f5923fe0facf7"
+    }
+  },
+  "input_size": 640,
+  "method": "Isomorphic Pruning + Taylor",
+  "model_id": "bdd_gen2_isomorphic_taylor_t7_56pct_640_fp32",
+  "ncnn_export": {
+    "end2end": false,
+    "source_checkpoint_sha256": "0afa4a3da8be391f970bdd009c31f1f35d480240c1098170fd98c6bd3ef38347",
+    "torch_version": "2.4.1+cu121",
+    "ultralytics_version": "8.4.21"
+  },
+  "paper_role": "comparator",
+  "precision": "fp32",
+  "schema": "xdprune_public_paper_model_v1"
+}
