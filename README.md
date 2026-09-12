@@ -5,7 +5,7 @@ This project focuses on cross-domain pruning for edge devices.
 
 This repo is a research for developing, analyzing, optimizing, and deploying YOLO-based traffic detection models on edge devices.
 
-Using the MIO-TCD traffic dataset and PYNQ FPGA platforms, provides workflows for model training, profiling, error-injection analysis, structured pruning techniques, NCNN conversion, and performance benchmarking across pc/server and embedded platforms.
+Using the MIO-TCD traffic dataset and PYNQ-Z2 board, provides workflows for model training, profiling, error-injection analysis, structured pruning techniques, NCNN conversion, and performance benchmarking across pc/server and embedded platforms.
 
 Serves as an experiment for researchers and people interested in edge AI, model compression, hardware-aware optimization, and intelligent transportation systems.
 
@@ -24,15 +24,15 @@ Serves as an experiment for researchers and people interested in edge AI, model 
 
 ## Validate
 
-After training, error injection, pruning, etc., validation is frequently used for model accuracy after certain actions. There are some points we may pay attention for depends on the dataset:
+Validation is frequently performed to assess model accuracy after certain actions (such as training, error injection, pruning, etc.). There are some points that people may pay attention to:
 
 <div align="center">
 <img src="z_md/1_train_light.png" width="75%">
 <br>
-Figure 1: Per class accuracy.
+Figure 1: Per-class accuracy.
 </div>
 
-The overall accuracy may be high, but it can be unbalanced among classes.
+The overall accuracy may be high, but it can be unbalanced among classes (depending on the training dataset).
 
 <div align="center">
 <img src="z_md/2_train_epoch.png" width="30%">
@@ -40,15 +40,15 @@ The overall accuracy may be high, but it can be unbalanced among classes.
 Figure 2: Eopch accuracy.
 </div>
 
-A high epoch does not guarantee high accuracy; it is important to use the best model instead of the last one.
+A high epoch does not guarantee high accuracy; it is important to use the best model instead of the last model.
 
 <div align="center">
 <img src="z_md/3_train_validate.jpg" width="50%">
 <br>
-Figure 3: Image with box.
+Figure 3: Image with boxes.
 </div>
 
-Figure 3 is an example of the object detection results of the YOLO model.
+Figure 3 shows an example of object detection results from a YOLO model.
 
 
 ## Summary
