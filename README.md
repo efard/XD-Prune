@@ -10,6 +10,17 @@ Using the MIO-TCD traffic dataset and PYNQ-Z2 board, provides workflows for mode
 Serves as an experiment for researchers and people interested in edge AI, model compression, hardware-aware optimization, and intelligent transportation systems.
 
 
+## Repo main folders
+
+| Folder | Files | Types (main) |
+| --- | --- | --- |
+| 1_data/ | dataset and related info | .png .mov .csv .yaml |
+| 2_scripts/ | scripts for pc or server uses | .py .sh |
+| 2_scripts_pynq/ | scripts for pynq board uses | .cpp .sh |
+| 3_models/ | pt and ncnn models | .pt .param .bin .yaml |
+| (4 to 8)\_results_*/ | experiment results | .csv .pt |
+
+
 ## .md files
 
 1. **[Model Training](1_tarin.md)** — Convert MIO-TCD dataset to YOLO format and train baseline YOLO26n models.
