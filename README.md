@@ -18,6 +18,23 @@ raw logs, and models outside the reported study are intentionally absent.
 The primary machine-readable BDD100K comparison is
 [`results/tables/bdd100k_t7_matched_results.csv`](results/tables/bdd100k_t7_matched_results.csv).
 
+## Selected visual evidence
+
+The selected output figures below complement the machine-readable result
+tables; they are not substitutes for the corresponding manifests, CSVs, or
+validation protocol. See [`figures/README.md`](figures/README.md) for their
+provenance and interpretation.
+
+<p align="center">
+  <img src="figures/bdd_gen2_proposed_t7_stage5_training.png" width="48%" alt="GEN2 proposed T7 final recovery-stage curves" />
+  <img src="figures/bdd_ngn2_proposed_t7_stage5_training.png" width="48%" alt="NGN2 proposed T7 final recovery-stage curves" />
+</p>
+
+<p align="center">
+  <img src="figures/signed_ad_bn_recalibration_audit.png" width="48%" alt="Signed accuracy-difference batch-normalization audit" />
+  <img src="figures/signed_ad_bootstrap_intervals.png" width="48%" alt="Paired bootstrap confidence intervals for signed accuracy differences" />
+</p>
+
 Install a compatible PyTorch/torchvision build for the target system first,
 then install the remaining dependencies with
 `pip install -r requirements.txt`.
