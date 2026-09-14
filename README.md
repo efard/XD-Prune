@@ -35,6 +35,11 @@ provenance and interpretation.
   <img src="figures/signed_ad_bootstrap_intervals.png" width="48%" alt="Paired bootstrap confidence intervals for signed accuracy differences" />
 </p>
 
+<p align="center">
+  <img src="figures/bdd_gen2_baseline_validation_predictions.jpg" width="48%" alt="GEN2 baseline validation predictions with bounding boxes" />
+  <img src="figures/bdd_ngn2_baseline_validation_predictions.jpg" width="48%" alt="NGN2 baseline validation predictions with bounding boxes" />
+</p>
+
 Install a compatible PyTorch/torchvision build for the target system first,
 then install the remaining dependencies with
 `pip install -r requirements.txt`.
