@@ -14,7 +14,7 @@ command -v "${CXX}" >/dev/null || { echo "Compiler not found: ${CXX}" >&2; exit 
 command -v pkg-config >/dev/null || { echo "pkg-config is required" >&2; exit 1; }
 pkg-config --exists opencv4 || { echo "opencv4 pkg-config entry is missing" >&2; exit 1; }
 pkg-config --exists ncnn || {
-    echo "ncnn pkg-config entry is missing. Ask Ho Yin for the exact NCNN install prefix/build command before changing the board." >&2
+    echo "ncnn pkg-config entry is missing. Configure a valid NCNN install prefix/build command before continuing." >&2
     exit 1
 }
 

@@ -5,11 +5,10 @@ form the TrafficYOLO project:
 
 - [`hardware/`](hardware/): YOLO26n profiling, robustness experiments,
   structured-compression studies, NCNN export, and PYNQ-Z2 software-side
-  deployment workflow contributed by Ho Yin.
+  deployment workflow.
 - [`xdprune/`](xdprune/): the XD-Prune dependency-aware structured-pruning
   study, including frozen configurations, ranking and recovery evidence,
-  matched baselines, final paper model packages, and deployment utilities
-  contributed by Rafed.
+  matched baselines, final paper model packages, and deployment utilities.
 
 The two directories retain their original internal layouts so that their
 documentation and scripts remain traceable to the recorded experiments.
@@ -44,10 +43,9 @@ be interpreted as programmable-logic accelerator measurements.
 ## Repository map
 
 ```text
-hardware/  Ho Yin's profiling, robustness, compression, NCNN, and PYNQ workflow
-xdprune/  Rafed's dependency-aware pruning study and approved paper artifacts
+hardware/  Profiling, robustness, compression, NCNN, and PYNQ workflow
+xdprune/  Dependency-aware pruning study and approved paper artifacts
 ```
 
 Each component has its own README and preserves its original evidence paths.
-The branches `hoyin/yolo26n` and `rafed/yolo26n-xdprune` remain preserved as
-the source histories for this integration.
+The component source histories remain preserved for integration traceability.

@@ -33,7 +33,7 @@ import run_cumulative_balanced_v2_top3_pilot as pilot
 
 PROJECT_ROOT = base.PROJECT_ROOT
 STUDY_ROOT = base.STUDY_ROOT
-RANKING_PATH = STUDY_ROOT / "Rafed's Custom experiments" / "experiment_3_gen_protected_v3" / "T4_GEN_PROTECTED_PRUNABILITY.csv"
+RANKING_PATH = STUDY_ROOT / "custom_experiments" / "experiment_3_gen_protected_v3" / "T4_GEN_PROTECTED_PRUNABILITY.csv"
 PROTOCOL_PATH = STUDY_ROOT / "configs" / "pruning" / "sequential_gen_protected_v3_pending_limits.json"
 OUTPUT_ROOT = STUDY_ROOT / "results" / "pruning" / "prune_12_5" / "sequential_gen_protected_v3"
 SCHEMA = "sequential_gen_protected_v3_v1"

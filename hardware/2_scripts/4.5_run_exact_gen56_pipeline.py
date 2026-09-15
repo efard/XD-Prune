@@ -48,7 +48,7 @@ DEFAULT_PROJECT_ROOT = Path("/home/afm176/yolo_project")
 
 DEFAULT_GEN_MODEL = (
     DEFAULT_PROJECT_ROOT
-    / "5_reproduction/reproducing_files_for_hoyin/models/GEN_baseline_best.pt"
+    / "5_reproduction/reference_artifacts/models/GEN_baseline_best.pt"
 )
 
 DEFAULT_GEN_DATA = Path(
@@ -58,13 +58,13 @@ DEFAULT_GEN_DATA = Path(
 
 DEFAULT_T4 = (
     DEFAULT_PROJECT_ROOT
-    / "5_reproduction/reproducing_files_for_hoyin/tables/"
+    / "5_reproduction/reference_artifacts/tables/"
     "T4_25pct_group_ranking.csv"
 )
 
 DEFAULT_PROTECTED = (
     DEFAULT_PROJECT_ROOT
-    / "5_reproduction/reproducing_files_for_hoyin/"
+    / "5_reproduction/reference_artifacts/"
     "group_definitions/protected_root_manifest.csv"
 )
 

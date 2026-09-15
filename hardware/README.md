@@ -1,6 +1,6 @@
 # TrafficYOLO Hardware and Deployment Workflow
 
-This directory preserves Ho Yin's original YOLO26n profiling, robustness,
+This directory contains the YOLO26n profiling, robustness,
 structured-compression, NCNN-export, and PYNQ-Z2 workflow. Its numbered
 layout is retained to keep the associated scripts and evidence traceable.
 
@@ -24,5 +24,12 @@ layout is retained to keep the associated scripts and evidence traceable.
 | `2_scripts_pynq/` | C++ NCNN runner/server and board shell scripts |
 | `3_models/` | Archived checkpoints and NCNN exports used by this workflow |
 | `4_results_profi/`--`8_results_pt/` | Profiling, robustness, compression, NCNN, and checkpoint evidence |
+| `figures/` | Selected qualitative validation prediction grids |
 
 Refer to the individual guides for experimental scope and interpretation.
+
+## Selected validation visual evidence
+
+The images in [`figures/`](figures/) are archived validation prediction grids
+from the software workflow. They are qualitative examples only; use the
+recorded metric tables and reports for quantitative comparisons.

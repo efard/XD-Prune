@@ -9,7 +9,7 @@
   "search": {
     "cap_used": 0.9,
     "domain": "GEN",
-    "checkpoint": "/home/afm176/yolo_project/5_reproduction/reproducing_files_for_hoyin/models/GEN_baseline_best.pt",
+    "checkpoint": "/home/afm176/yolo_project/5_reproduction/reference_artifacts/models/GEN_baseline_best.pt",
     "checkpoint_sha256": "d0250e9ffd459c2c46a01ac81421d95e9e1d0bb35799b5dede30c92e7b94d250",
     "baseline_parameters": 2508090,
     "target_parameters": 1091130,
@@ -38,7 +38,7 @@
   "raw_result": {
     "domain": "GEN",
     "status": "ok",
-    "baseline_checkpoint": "/home/afm176/yolo_project/5_reproduction/reproducing_files_for_hoyin/models/GEN_baseline_best.pt",
+    "baseline_checkpoint": "/home/afm176/yolo_project/5_reproduction/reference_artifacts/models/GEN_baseline_best.pt",
     "baseline_checkpoint_sha256": "d0250e9ffd459c2c46a01ac81421d95e9e1d0bb35799b5dede30c92e7b94d250",
     "data_yaml": "/project/ko/afm176/datasets/1_data/reproduction_exact_v1/GEN_MIO_TCD_exact/dataset_GEN_local.yaml",
     "plan_path": "/home/afm176/yolo_project/5_reproduction/global_l1_56_exact_gen_results/GEN_global_L1_56_exact_20260810_031623/search_cap90/GEN/chosen_replay_plan.csv",
