@@ -30,18 +30,7 @@ Refer to the individual guides for experimental scope and interpretation.
 
 ## Selected validation visual evidence
 
-The images in [`figures/`](figures/) are archived validation prediction grids
-from the software workflow. They are qualitative examples only; use the
-recorded metric tables and reports for quantitative comparisons.
-
-### FP32 baseline validation predictions
-
-![FP32 baseline validation predictions](figures/fp32_baseline_validation_predictions.jpg)
-
-### INT8 validation predictions
-
-![INT8 validation predictions](figures/int8_validation_predictions.jpg)
-
-### Structured-pruning validation predictions
-
-![Structured-pruning validation predictions](figures/structured_pruning_validation_predictions.jpg)
+The archived visual examples are embedded in the
+[Validate section of the model-training guide](1_tarin.md#validate). They are
+qualitative evidence only; use the recorded metric tables and reports for
+quantitative comparisons.

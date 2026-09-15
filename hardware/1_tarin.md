@@ -56,3 +56,32 @@ Add `--run-test` only when a final test-split evaluation is required.
 - training `args.yaml`
 - `results.csv`
 - dataset YAML
+
+## Validate
+
+Evaluate detection quality using the metric records, per-class curves, and
+qualitative predictions together. Aggregate scores can mask class imbalance,
+so per-class behaviour should be inspected before drawing conclusions from a
+single summary metric.
+
+### Per-class precision--recall behaviour
+
+![Baseline per-class precision--recall curve](figures/baseline_precision_recall_curve.png)
+
+The precision--recall curve reports the class-specific detection trade-off and
+the all-class aggregate curve for the archived baseline validation run.
+
+### Training and validation metric history
+
+![Baseline training and validation metrics](figures/baseline_training_metrics.png)
+
+Use the validation metric traces together with the saved checkpoint metadata
+when selecting a checkpoint for subsequent profiling or deployment.
+
+### Qualitative structured-pruning predictions
+
+![Structured-pruning validation predictions](figures/structured_pruning_validation_predictions.jpg)
+
+This grid provides qualitative examples of detected objects across varied
+traffic scenes. It is not a substitute for the quantitative validation
+records.
