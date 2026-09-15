@@ -1,0 +1,12 @@
+{
+  "method": "Exact Stage 5B V2 dependency-aware incremental Global L1 channel-magnitude structured pruning",
+  "target_reduction_percent": 56.4956,
+  "target_parameters": 1091130,
+  "generic_roots_included": 42,
+  "custom_roots_excluded": 9,
+  "protected_manifest_rows": 54,
+  "trace_mode": "exact successful Stage5B V2: model.eval(), requires_grad input, all_tensor_output_transform",
+  "root_cap_policy": "try 50% per-root first; if target is unreachable, automatically restart from baseline with 90% per-root cap",
+  "absolute_minimum_channels": 4,
+  "recovery_epochs": 20
+}

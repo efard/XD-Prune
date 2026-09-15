@@ -1,0 +1,3630 @@
+{
+  "DG001": {
+    "alias_roots": [
+      "model.0.conv"
+    ],
+    "canonical_group_id": "DG001",
+    "operation_signature_sha256": "4D7253711C634DC176E2CAA3627CEDCF9DF9E3D8343437BC2C92D81EACFCAE18",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G001"
+    ],
+    "representative_probe_indices": [
+      0,
+      8,
+      15
+    ],
+    "representative_root": "model.0.conv",
+    "root_out_channels": 16
+  },
+  "DG002": {
+    "alias_roots": [
+      "model.1.conv"
+    ],
+    "canonical_group_id": "DG002",
+    "operation_signature_sha256": "6AC7F05A121F2C4B2285863C3491F64B07EE683089909686E420E35ADDF52183",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.2.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G002"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.1.conv",
+    "root_out_channels": 32
+  },
+  "DG003": {
+    "alias_roots": [
+      "model.10.cv2.conv"
+    ],
+    "canonical_group_id": "DG003",
+    "operation_signature_sha256": "F2F461E787011C26EFE2E66CF6846D4E4BAF2E96DFA38D2E69F10C06800B1030",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          128,
+          256,
+          383
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.10.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.10.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.13.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          128,
+          256,
+          383
+        ],
+        "target_module_path": "model.22.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G004"
+    ],
+    "representative_probe_indices": [
+      0,
+      128,
+      255
+    ],
+    "representative_root": "model.10.cv2.conv",
+    "root_out_channels": 256
+  },
+  "DG004": {
+    "alias_roots": [
+      "model.10.m.0.ffn.0.conv"
+    ],
+    "canonical_group_id": "DG004",
+    "operation_signature_sha256": "38395DA3215F2F09E285F1675BD4340A9D3032468AA9CEFF6683E43576F452BE",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.10.m.0.ffn.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.10.m.0.ffn.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.10.m.0.ffn.1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G005"
+    ],
+    "representative_probe_indices": [
+      0,
+      128,
+      255
+    ],
+    "representative_root": "model.10.m.0.ffn.0.conv",
+    "root_out_channels": 256
+  },
+  "DG005": {
+    "alias_roots": [
+      "model.13.cv2.conv"
+    ],
+    "canonical_group_id": "DG005",
+    "operation_signature_sha256": "D559E2B24FCDA5B870E62A08DDB627C46D20E9303948C797239E03DF825820C3",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          64,
+          128,
+          191
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.13.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.13.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.16.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          64,
+          128,
+          191
+        ],
+        "target_module_path": "model.19.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G008"
+    ],
+    "representative_probe_indices": [
+      0,
+      64,
+      127
+    ],
+    "representative_root": "model.13.cv2.conv",
+    "root_out_channels": 128
+  },
+  "DG006": {
+    "alias_roots": [
+      "model.13.m.0.cv1.conv",
+      "model.13.m.0.m.0.cv2.conv",
+      "model.13.m.0.m.1.cv2.conv"
+    ],
+    "canonical_group_id": "DG006",
+    "operation_signature_sha256": "F0A87FD9F9E331CF0C35351F202A13987064692308DEADA8A5D29A7D0CE506E4",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.1.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G009",
+      "G013",
+      "G015"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.13.m.0.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG007": {
+    "alias_roots": [
+      "model.13.m.0.cv2.conv"
+    ],
+    "canonical_group_id": "DG007",
+    "operation_signature_sha256": "EAE374EE683B94457EFBC3895AB24CC4B54EF503D8A3AD7CBAB555B37BAED9D7",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          32,
+          48,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          32,
+          48,
+          63
+        ],
+        "target_module_path": "model.13.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G010"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.13.m.0.cv2.conv",
+    "root_out_channels": 32
+  },
+  "DG008": {
+    "alias_roots": [
+      "model.13.m.0.m.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG008",
+    "operation_signature_sha256": "8475FCDD9C3081145CB03CA2E98844E97A0A7EB7E0DCBE26B2ACC614A5CA23A9",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G012"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.13.m.0.m.0.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG009": {
+    "alias_roots": [
+      "model.13.m.0.m.1.cv1.conv"
+    ],
+    "canonical_group_id": "DG009",
+    "operation_signature_sha256": "6D2F97E479B67E2211C3AC1093291176769811650D5194B259F1598A5E20CD1A",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.1.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.13.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G014"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.13.m.0.m.1.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG010": {
+    "alias_roots": [
+      "model.16.cv2.conv"
+    ],
+    "canonical_group_id": "DG010",
+    "operation_signature_sha256": "858EBE161EE35413C8FB4B137CE7EEDBE99FF07D83247B53192E0B4290FC8095",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.16.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.16.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.17.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.cv2.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.cv3.0.0.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.cv3.0.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.cv3.0.0.1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.one2one_cv2.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.one2one_cv3.0.0.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.one2one_cv3.0.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.23.one2one_cv3.0.0.1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G017"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.16.cv2.conv",
+    "root_out_channels": 64
+  },
+  "DG011": {
+    "alias_roots": [
+      "model.16.m.0.cv1.conv",
+      "model.16.m.0.m.0.cv2.conv",
+      "model.16.m.0.m.1.cv2.conv"
+    ],
+    "canonical_group_id": "DG011",
+    "operation_signature_sha256": "0C1625C1643F89DF5F2105C2555F223908C2722349279343871A8563E55CDB3E",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.1.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G018",
+      "G022",
+      "G024"
+    ],
+    "representative_probe_indices": [
+      0,
+      8,
+      15
+    ],
+    "representative_root": "model.16.m.0.cv1.conv",
+    "root_out_channels": 16
+  },
+  "DG012": {
+    "alias_roots": [
+      "model.16.m.0.cv2.conv"
+    ],
+    "canonical_group_id": "DG012",
+    "operation_signature_sha256": "6862EC30BB33912C683BE04FAF99BD008D450F71FC70B174CE26803E5197C995",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          16,
+          24,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          16,
+          24,
+          31
+        ],
+        "target_module_path": "model.16.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G019"
+    ],
+    "representative_probe_indices": [
+      0,
+      8,
+      15
+    ],
+    "representative_root": "model.16.m.0.cv2.conv",
+    "root_out_channels": 16
+  },
+  "DG013": {
+    "alias_roots": [
+      "model.16.m.0.m.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG013",
+    "operation_signature_sha256": "027A58290D8528DD5AE0142EE709ABC76891C8BDDE61D4F033F474179210E8B5",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G021"
+    ],
+    "representative_probe_indices": [
+      0,
+      8,
+      15
+    ],
+    "representative_root": "model.16.m.0.m.0.cv1.conv",
+    "root_out_channels": 16
+  },
+  "DG014": {
+    "alias_roots": [
+      "model.16.m.0.m.1.cv1.conv"
+    ],
+    "canonical_group_id": "DG014",
+    "operation_signature_sha256": "84250EB1EAA278E8C142705662ADFB674A9A3688091CD0B8514CB3D17D8D4EE8",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.1.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.16.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G023"
+    ],
+    "representative_probe_indices": [
+      0,
+      8,
+      15
+    ],
+    "representative_root": "model.16.m.0.m.1.cv1.conv",
+    "root_out_channels": 16
+  },
+  "DG015": {
+    "alias_roots": [
+      "model.17.conv"
+    ],
+    "canonical_group_id": "DG015",
+    "operation_signature_sha256": "AD6973138D97FA9CF66265934B56FCD9DF451EB5411192910CC0D371A8D9D39F",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.17.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.17.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.19.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G025"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.17.conv",
+    "root_out_channels": 64
+  },
+  "DG016": {
+    "alias_roots": [
+      "model.19.cv2.conv"
+    ],
+    "canonical_group_id": "DG016",
+    "operation_signature_sha256": "9B90755E90BFC24277DC612A04D5EA8D4C1CCA0196ADDD327A1AA223891C1997",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.19.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.19.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.20.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.cv2.1.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.cv3.1.0.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.cv3.1.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.cv3.1.0.1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.one2one_cv2.1.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.one2one_cv3.1.0.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.one2one_cv3.1.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.23.one2one_cv3.1.0.1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G027"
+    ],
+    "representative_probe_indices": [
+      0,
+      64,
+      127
+    ],
+    "representative_root": "model.19.cv2.conv",
+    "root_out_channels": 128
+  },
+  "DG017": {
+    "alias_roots": [
+      "model.19.m.0.cv1.conv",
+      "model.19.m.0.m.0.cv2.conv",
+      "model.19.m.0.m.1.cv2.conv"
+    ],
+    "canonical_group_id": "DG017",
+    "operation_signature_sha256": "E88236525FDAA40D87E0C0D1BC4CA70658AF19011676D8BB70F7C53114401F73",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.1.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G028",
+      "G032",
+      "G034"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.19.m.0.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG018": {
+    "alias_roots": [
+      "model.19.m.0.cv2.conv"
+    ],
+    "canonical_group_id": "DG018",
+    "operation_signature_sha256": "BACCC6C71FF90A6B4E4BE5F7D1C36F2EB6F06EBF77B4E3A69C326E4380669911",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          32,
+          48,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          32,
+          48,
+          63
+        ],
+        "target_module_path": "model.19.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G029"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.19.m.0.cv2.conv",
+    "root_out_channels": 32
+  },
+  "DG019": {
+    "alias_roots": [
+      "model.19.m.0.m.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG019",
+    "operation_signature_sha256": "D6BE6B46CF9D7086F5CF80CF3E5367EB63CF7110CAAAFB4832B3F38D44EA32E6",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G031"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.19.m.0.m.0.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG020": {
+    "alias_roots": [
+      "model.19.m.0.m.1.cv1.conv"
+    ],
+    "canonical_group_id": "DG020",
+    "operation_signature_sha256": "E35001AE5CF1B8368526F5058EEEC03744E870D3A26939BEB74E75FD2704B292",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.1.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.19.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G033"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.19.m.0.m.1.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG021": {
+    "alias_roots": [
+      "model.2.cv2.conv"
+    ],
+    "canonical_group_id": "DG021",
+    "operation_signature_sha256": "CC4A8767EA664174900CFA323685E66560CF6E6032E9D4759F24ED4DEA41224C",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.2.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.2.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.3.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G036"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.2.cv2.conv",
+    "root_out_channels": 64
+  },
+  "DG022": {
+    "alias_roots": [
+      "model.2.m.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG022",
+    "operation_signature_sha256": "048D09C4EE8FD1451717CF7306BC5A7E7DE947352EAB2D1C2FBFA1014711B69E",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          4,
+          7
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          4,
+          7
+        ],
+        "target_module_path": "model.2.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          4,
+          7
+        ],
+        "target_module_path": "model.2.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          4,
+          7
+        ],
+        "target_module_path": "model.2.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G037"
+    ],
+    "representative_probe_indices": [
+      0,
+      4,
+      7
+    ],
+    "representative_root": "model.2.m.0.cv1.conv",
+    "root_out_channels": 8
+  },
+  "DG023": {
+    "alias_roots": [
+      "model.20.conv"
+    ],
+    "canonical_group_id": "DG023",
+    "operation_signature_sha256": "9A3C52F7EE43161E9326A5F04E405844E3446988FD9E620DF33991FDB698CCA7",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.20.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.20.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.22.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G039"
+    ],
+    "representative_probe_indices": [
+      0,
+      64,
+      127
+    ],
+    "representative_root": "model.20.conv",
+    "root_out_channels": 128
+  },
+  "DG024": {
+    "alias_roots": [
+      "model.22.cv2.conv"
+    ],
+    "canonical_group_id": "DG024",
+    "operation_signature_sha256": "C814DE14C9136FF1AC44B2A5C569001377DFB7C8A23672103DA39655D057DA18",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.22.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.22.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.cv2.2.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.cv3.2.0.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.cv3.2.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.cv3.2.0.1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.one2one_cv2.2.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.one2one_cv3.2.0.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.one2one_cv3.2.0.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.23.one2one_cv3.2.0.1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G041"
+    ],
+    "representative_probe_indices": [
+      0,
+      128,
+      255
+    ],
+    "representative_root": "model.22.cv2.conv",
+    "root_out_channels": 256
+  },
+  "DG025": {
+    "alias_roots": [
+      "model.22.m.0.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG025",
+    "operation_signature_sha256": "3194FFEB0B3381B2146C43153D429A0334A038BA72AB0A53F6EDD85BEECC71AE",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.22.m.0.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.22.m.0.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.22.m.0.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G042"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.22.m.0.0.cv1.conv",
+    "root_out_channels": 64
+  },
+  "DG026": {
+    "alias_roots": [
+      "model.22.m.0.1.ffn.0.conv"
+    ],
+    "canonical_group_id": "DG026",
+    "operation_signature_sha256": "522D0BF808067627521867EA7C813BE05F7D13E0F27BE3EBCEE84DBE42236F54",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.22.m.0.1.ffn.0.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.22.m.0.1.ffn.0.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.22.m.0.1.ffn.1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G044"
+    ],
+    "representative_probe_indices": [
+      0,
+      128,
+      255
+    ],
+    "representative_root": "model.22.m.0.1.ffn.0.conv",
+    "root_out_channels": 256
+  },
+  "DG027": {
+    "alias_roots": [
+      "model.3.conv"
+    ],
+    "canonical_group_id": "DG027",
+    "operation_signature_sha256": "EDF734F53F557422A1DD810A607FFD8E6C178D79F0F7D7AC51733185E7332BFC",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.3.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.3.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.4.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G046"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.3.conv",
+    "root_out_channels": 64
+  },
+  "DG028": {
+    "alias_roots": [
+      "model.4.cv2.conv"
+    ],
+    "canonical_group_id": "DG028",
+    "operation_signature_sha256": "0D05FC8B751A355B06DF98A9ECE70DDAC7929019D30999FEFA95EE0FF439927B",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          128,
+          192,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          128,
+          192,
+          255
+        ],
+        "target_module_path": "model.16.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.4.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.4.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.5.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G048"
+    ],
+    "representative_probe_indices": [
+      0,
+      64,
+      127
+    ],
+    "representative_root": "model.4.cv2.conv",
+    "root_out_channels": 128
+  },
+  "DG029": {
+    "alias_roots": [
+      "model.4.m.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG029",
+    "operation_signature_sha256": "B7AFBB75021A60D1FAC061DC9E9D6EABAD330166BEDCC8ADFA95B2A2423E6C6D",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.4.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.4.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          8,
+          15
+        ],
+        "target_module_path": "model.4.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G049"
+    ],
+    "representative_probe_indices": [
+      0,
+      8,
+      15
+    ],
+    "representative_root": "model.4.m.0.cv1.conv",
+    "root_out_channels": 16
+  },
+  "DG030": {
+    "alias_roots": [
+      "model.5.conv"
+    ],
+    "canonical_group_id": "DG030",
+    "operation_signature_sha256": "4755433A50174BCB60F7345AE2D065FA16F94A15303457B97B5D332DCEC9C55F",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.5.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.5.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.6.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G051"
+    ],
+    "representative_probe_indices": [
+      0,
+      64,
+      127
+    ],
+    "representative_root": "model.5.conv",
+    "root_out_channels": 128
+  },
+  "DG031": {
+    "alias_roots": [
+      "model.6.cv2.conv"
+    ],
+    "canonical_group_id": "DG031",
+    "operation_signature_sha256": "E5C5FF3562ED44DEB0C005020760BA6C1BE8C4A81C984DE1D28F6F437C8691E9",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          256,
+          320,
+          383
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          256,
+          320,
+          383
+        ],
+        "target_module_path": "model.13.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.6.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.6.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.7.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G053"
+    ],
+    "representative_probe_indices": [
+      0,
+      64,
+      127
+    ],
+    "representative_root": "model.6.cv2.conv",
+    "root_out_channels": 128
+  },
+  "DG032": {
+    "alias_roots": [
+      "model.6.m.0.cv1.conv",
+      "model.6.m.0.m.0.cv2.conv",
+      "model.6.m.0.m.1.cv2.conv"
+    ],
+    "canonical_group_id": "DG032",
+    "operation_signature_sha256": "C0C6A88589C62922197C5587BA258C5B7A1981A5BC410E6FAD6ED2C54AD500C8",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.1.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G054",
+      "G058",
+      "G060"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.6.m.0.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG033": {
+    "alias_roots": [
+      "model.6.m.0.cv2.conv"
+    ],
+    "canonical_group_id": "DG033",
+    "operation_signature_sha256": "EA207FF2274BEE2356B3587BA7C45F65C5F9629A71A968ABC4963D4F91B7ED83",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          32,
+          48,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          32,
+          48,
+          63
+        ],
+        "target_module_path": "model.6.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G055"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.6.m.0.cv2.conv",
+    "root_out_channels": 32
+  },
+  "DG034": {
+    "alias_roots": [
+      "model.6.m.0.m.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG034",
+    "operation_signature_sha256": "9E4D9C3E84428F98DC807B5A894768397796B8B511AB7BD1392A193CF2B34219",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G057"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.6.m.0.m.0.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG035": {
+    "alias_roots": [
+      "model.6.m.0.m.1.cv1.conv"
+    ],
+    "canonical_group_id": "DG035",
+    "operation_signature_sha256": "3094149D7F790742F81496983D6573D2E331C9FA702838EC85304296E74035BC",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.1.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          16,
+          31
+        ],
+        "target_module_path": "model.6.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G059"
+    ],
+    "representative_probe_indices": [
+      0,
+      16,
+      31
+    ],
+    "representative_root": "model.6.m.0.m.1.cv1.conv",
+    "root_out_channels": 32
+  },
+  "DG036": {
+    "alias_roots": [
+      "model.7.conv"
+    ],
+    "canonical_group_id": "DG036",
+    "operation_signature_sha256": "68EE6F9F5E027BE65BB61860D15FB60FA244336D612749B939AE922DFCF8752B",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.7.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.7.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.8.cv1.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G061"
+    ],
+    "representative_probe_indices": [
+      0,
+      128,
+      255
+    ],
+    "representative_root": "model.7.conv",
+    "root_out_channels": 256
+  },
+  "DG037": {
+    "alias_roots": [
+      "model.8.cv2.conv",
+      "model.9.cv2.conv"
+    ],
+    "canonical_group_id": "DG037",
+    "operation_signature_sha256": "38FA516682BA06E9FDD622F943E127325943350C0E1C6EFC6F9DF8F3A9836F90",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.10.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.8.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.8.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.9.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.9.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          128,
+          255
+        ],
+        "target_module_path": "model.9.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G063",
+      "G072"
+    ],
+    "representative_probe_indices": [
+      0,
+      128,
+      255
+    ],
+    "representative_root": "model.8.cv2.conv",
+    "root_out_channels": 256
+  },
+  "DG038": {
+    "alias_roots": [
+      "model.8.m.0.cv1.conv",
+      "model.8.m.0.m.0.cv2.conv",
+      "model.8.m.0.m.1.cv2.conv"
+    ],
+    "canonical_group_id": "DG038",
+    "operation_signature_sha256": "6B461F92468B052284CE4E88EEBC1E4CA8C02619A4FFE1AD1D30D307C5C4BB14",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.1.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G064",
+      "G068",
+      "G070"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.8.m.0.cv1.conv",
+    "root_out_channels": 64
+  },
+  "DG039": {
+    "alias_roots": [
+      "model.8.m.0.cv2.conv"
+    ],
+    "canonical_group_id": "DG039",
+    "operation_signature_sha256": "034370233877D2604E8E44553FC096D04E21063E06B23E3586CD66B674B6121C",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          64,
+          96,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.cv2.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          64,
+          96,
+          127
+        ],
+        "target_module_path": "model.8.m.0.cv3.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G065"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.8.m.0.cv2.conv",
+    "root_out_channels": 64
+  },
+  "DG040": {
+    "alias_roots": [
+      "model.8.m.0.m.0.cv1.conv"
+    ],
+    "canonical_group_id": "DG040",
+    "operation_signature_sha256": "48148DED9C17E981B4E0A4C59472481C031E9CDDDE586411F5EBF508D97A0A69",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.0.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.0.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.0.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G067"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.8.m.0.m.0.cv1.conv",
+    "root_out_channels": 64
+  },
+  "DG041": {
+    "alias_roots": [
+      "model.8.m.0.m.1.cv1.conv"
+    ],
+    "canonical_group_id": "DG041",
+    "operation_signature_sha256": "7ED7D8415170B6BBD3C03F57D058D20835522F710A4C4481E1A6B893B04D1A4A",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.1.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.1.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          0,
+          32,
+          63
+        ],
+        "target_module_path": "model.8.m.0.m.1.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G069"
+    ],
+    "representative_probe_indices": [
+      0,
+      32,
+      63
+    ],
+    "representative_root": "model.8.m.0.m.1.cv1.conv",
+    "root_out_channels": 64
+  },
+  "DG042": {
+    "alias_roots": [
+      "model.9.cv1.conv"
+    ],
+    "canonical_group_id": "DG042",
+    "operation_signature_sha256": "93E126AE527EADD591F4ABA66EB3726899DD1A1EDB9F1DCC22C5C1CBF7019BB7",
+    "operations": [
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127,
+          128,
+          192,
+          255,
+          256,
+          320,
+          383,
+          384,
+          448,
+          511
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ConcatOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "<autograd-operation>",
+        "target_module_type": "_ElementWiseOp"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.9.cv1.bn",
+        "target_module_type": "BatchNorm2d"
+      },
+      {
+        "handler": "prune_out_channels",
+        "representative_indices": [
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.9.cv1.conv",
+        "target_module_type": "Conv2d"
+      },
+      {
+        "handler": "prune_in_channels",
+        "representative_indices": [
+          384,
+          448,
+          511,
+          256,
+          320,
+          383,
+          128,
+          192,
+          255,
+          0,
+          64,
+          127
+        ],
+        "target_module_path": "model.9.cv2.conv",
+        "target_module_type": "Conv2d"
+      }
+    ],
+    "original_group_ids": [
+      "G071"
+    ],
+    "representative_probe_indices": [
+      0,
+      64,
+      127
+    ],
+    "representative_root": "model.9.cv1.conv",
+    "root_out_channels": 128
+  }
+}

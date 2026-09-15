@@ -1,0 +1,17 @@
+# Install a mutually compatible PyTorch/torchvision build for the target system first.
+# The XD-Prune GPU runs used the PyTorch 2.8 NVIDIA 25.06 container stack.
+ultralytics==8.4.127
+torch-pruning==1.6.1
+numpy
+pandas
+matplotlib
+opencv-python
+Pillow
+psutil
+pycocotools
+PyYAML
+tqdm
+requests
+scipy
+onnx
+onnxruntime

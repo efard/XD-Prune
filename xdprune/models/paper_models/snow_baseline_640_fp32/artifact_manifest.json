@@ -1,0 +1,37 @@
+{
+  "domain": "SNOW",
+  "files": {
+    "metadata.yaml": {
+      "bytes": 465,
+      "path": "metadata.yaml",
+      "sha256": "e484409c06ae73eda789bb1ebd9b9793e805472f2d0c3ea5db06fdd7bc62b596"
+    },
+    "model.ncnn.bin": {
+      "bytes": 9606792,
+      "path": "model.ncnn.bin",
+      "sha256": "63d6ed0629e1167e3c5496baa46e9c1a45bbd3150df6d45f211fd4c695ebb72e"
+    },
+    "model.ncnn.param": {
+      "bytes": 26394,
+      "path": "model.ncnn.param",
+      "sha256": "08fecdd2456db860a3ff1306f461100817fbf2ce348730133cfe06b0b1a86986"
+    },
+    "model.pt": {
+      "bytes": 5374078,
+      "path": "model.pt",
+      "sha256": "5c9bceba2872e98ee1beb967e10e4ca10e17bea6a8f8200e306bcdae067bdb68"
+    }
+  },
+  "input_size": 640,
+  "method": "Unpruned baseline",
+  "model_id": "snow_baseline_640_fp32",
+  "ncnn_export": {
+    "end2end": false,
+    "source_checkpoint_sha256": "5c9bceba2872e98ee1beb967e10e4ca10e17bea6a8f8200e306bcdae067bdb68",
+    "torch_version": "2.4.1+cu121",
+    "ultralytics_version": "8.4.21"
+  },
+  "paper_role": "baseline",
+  "precision": "fp32",
+  "schema": "xdprune_public_paper_model_v1"
+}

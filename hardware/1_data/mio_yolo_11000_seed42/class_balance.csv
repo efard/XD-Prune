@@ -1,0 +1,12 @@
+class_name,train_objects,val_objects,test_objects,total_objects
+articulated_truck,646,128,140,914
+bicycle,165,22,34,221
+bus,728,174,150,1052
+car,16127,3538,3533,23198
+motorcycle,126,31,30,187
+motorized_vehicle,1821,405,414,2640
+non_motorized_vehicle,179,35,39,253
+pedestrian,518,88,126,732
+pickup_truck,3101,639,677,4417
+single_unit_truck,406,78,76,560
+work_van,612,131,119,862

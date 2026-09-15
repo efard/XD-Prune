@@ -1,0 +1,75 @@
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Editors and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+*secrets*
+
+# Local datasets and generated dataset caches
+BDD-100K/
+MIO-TCD-Localization/
+rgb_anon/
+hardware/1_data/raw/
+hardware/1_data/**/images/
+hardware/1_data/**/labels/
+hardware/1_data/**/*.cache
+xdprune/data_views/**/images/
+xdprune/data_views/**/labels/
+xdprune/data_views/**/*.cache
+
+# Generated run artefacts and temporary files
+runs/detect/
+wandb/
+mlruns/
+logs/
+scratch/
+tmp/
+temp/
+**/training/
+**/weights/
+**/models/final/
+xdprune/deployment/**/board_results/
+xdprune/deployment/**/exported_models/
+
+# Common uncurated model and archive artefacts
+*.pth
+*.ckpt
+*.engine
+*.tflite
+*.pb
+*.weights
+*.safetensors
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Private working material
+paper_draft_overleaf/
+reports/
+literature/
