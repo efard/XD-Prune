@@ -1,0 +1,4 @@
+split,image_count,object_count
+train,7700,24429
+val,1650,5269
+test,1650,5338

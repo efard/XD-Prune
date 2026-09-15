@@ -1,0 +1,5 @@
+evaluation_group,domain,image_list,image_count,image_selection,seed_for_image_selection,same_images_across_models,evidence
+PT baseline + Global-L1 + Layer-Replacement,GEN,GEN_full_val_images.txt,11000,fixed full validation split,not sampled; validation/training scripts set seed=42,YES,dataset_GEN_local.yaml + PT validation scripts
+PT baseline + Global-L1 + Layer-Replacement,SNOW,SNOW_full_val_images.txt,100,fixed full validation split,not sampled; validation/training scripts set seed=42,YES,dataset_SNOW_local.yaml + PT validation scripts
+Included NCNN full-run accuracy results,GEN,GEN_full_val_images.txt,11000,fixed full validation split,not sampled,YES,ncnn_accuracy_results.csv + ncnn_accuracy_summary.json + full_run.log
+Included NCNN full-run accuracy results,SNOW,SNOW_full_val_images.txt,100,fixed full validation split,not sampled,YES,ncnn_accuracy_results.csv + ncnn_accuracy_summary.json + full_run.log
