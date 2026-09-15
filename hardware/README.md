@@ -30,7 +30,19 @@ Refer to the individual guides for experimental scope and interpretation.
 
 ## Selected validation visual evidence
 
-The archived visual examples are embedded in the
+These recorded visual examples also appear in the
 [Validate section of the model-training guide](1_tarin.md#validate). They are
 qualitative evidence only; use the recorded metric tables and reports for
 quantitative comparisons.
+
+### Per-class precision--recall behaviour
+
+![Baseline per-class precision--recall curve](figures/baseline_precision_recall_curve.png)
+
+### Training and validation metric history
+
+![Baseline training and validation metrics](figures/baseline_training_metrics.png)
+
+### Qualitative structured-pruning predictions
+
+![Structured-pruning validation predictions](figures/structured_pruning_validation_predictions.jpg)
