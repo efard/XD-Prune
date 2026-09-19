@@ -1,7 +1,7 @@
-# TrafficYOLO: Efficient YOLO26n Research Workflows
+# XD-Prune: A Cross-Domain Pruning Framework for Edge DNNs
 
 This repository combines the two reproducible research contributions that
-form the TrafficYOLO project:
+form the XD-Prune project:
 
 - [`hardware/`](hardware/): YOLO26n profiling, robustness experiments,
   structured-compression studies, NCNN export, and PYNQ-Z2 software-side
