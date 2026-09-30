@@ -1,0 +1,2 @@
+model,dataset,validation_split,imgsz,batch,mAP50_95,mAP50,mAP75,precision,recall,preprocess_ms,inference_ms,postprocess_ms,avg_latency_ms,fps
+/home/afm176/yolo_project/1_models/V5_ncnn_model,/project/ko/afm176/datasets/1_data/reproduction_exact_v1/SNOW_ACDC_exact/dataset_SNOW_local.yaml,val,640,1,0.0003543234372272168,0.0012576014452455129,0.00017186407486267515,0.25387227277054303,0.01073345259391771,0.2317333035171032,79.69379374757409,2.996395630761981,82.92192268185318,12.059537064000596
