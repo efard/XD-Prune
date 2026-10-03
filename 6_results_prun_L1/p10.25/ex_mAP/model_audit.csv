@@ -1,0 +1,5 @@
+model_label,domain,stage,checkpoint,checkpoint_sha256,size_mib
+L1-gen-raw,GEN,raw,/home/afm176/yolo_project/1_models/GEN_global_L1_42root_raw.pt,73d3e2878d6e713c7651e797d190c2e57d352b46ec7ba5fa3ccdf3a459bb5bb0,9.060025
+L1-gen-best,GEN,best,/home/afm176/yolo_project/1_models/GEN_global_L1_42root_recovered_best.pt,3b0d01a8b682ff5f1f625f57127d1d25fe7bddd4b22d0f86c32c2343848f47d7,4.637883
+L1-snow-raw,SNOW,raw,/home/afm176/yolo_project/1_models/SNOW_global_L1_42root_raw.pt,e0647dd2f03f30b269789a0b0ce1de1f0567381468e2630cef699b92768a10cf,9.05717
+L1-snow-best,SNOW,best,/home/afm176/yolo_project/1_models/SNOW_global_L1_42root_recovered_best.pt,527d686e757de9328ff34daed3d80bb6aad21f20628d6a6e076f88a76e272f45,4.631169

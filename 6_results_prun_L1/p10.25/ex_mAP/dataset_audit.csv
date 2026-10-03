@@ -1,0 +1,3 @@
+domain,dataset_yaml,validation_images,expected_validation_images,count_check
+GEN,/project/ko/afm176/datasets/1_data/reproduction_exact_v1/GEN_MIO_TCD_exact/dataset_GEN_local.yaml,11000,11000,PASS
+SNOW,/project/ko/afm176/datasets/1_data/reproduction_exact_v1/SNOW_ACDC_exact/dataset_SNOW_local.yaml,100,100,PASS
